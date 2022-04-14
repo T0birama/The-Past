@@ -6,9 +6,8 @@ public class InpectionON : MonoBehaviour
 {
     public GameObject Inspection;
     public InspectionObj inspectionObj;
-    public int index;
-    public bool isOBJ = false;
 
+    public InteractableOBJ interactableOBJ;
     public MouseLook mouseLook;
     public GameObject Bombilla;
 
@@ -21,14 +20,17 @@ public class InpectionON : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isOBJ)
+        if (Inspection.activeSelf == true)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                Inspection.SetActive(true);
-                inspectionObj.TurnOnInspection(index);
-                mouseLook.enabled = false;
+                Inspection.SetActive(false);
+                inspectionObj.TurnOffInspection();
+                Cursor.visible = false;
+                mouseLook.enabled = (true);
                 Bombilla.SetActive(false);
+                interactableOBJ.enabled = true;
+                interactableOBJ.isOBJ = false;
             }
         } 
 
@@ -36,30 +38,15 @@ public class InpectionON : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(1))
             {
+                interactableOBJ.enabled = true;
                 Inspection.SetActive(false);
                 inspectionObj.TurnOffInspection();
-                mouseLook.enabled = true;
-                Bombilla.SetActive(true);
+                Cursor.visible = false;
+                mouseLook.enabled = (true);
             }
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("ampolleta"))
-        {
-            isOBJ = true;
-        }
-        
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("ampolleta"))
-        {
-            isOBJ = false;
-        }
-
-    }
+    
 
 }
