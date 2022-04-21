@@ -20,9 +20,12 @@ public class Entra : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Area"))
+        if(other.CompareTag("Player"))
         {
             Timeline.Play();
+            gameObject.SetActive(false);
+
         }
     }
+
 }
