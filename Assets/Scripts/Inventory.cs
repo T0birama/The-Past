@@ -1,45 +1,62 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class Inventory : MonoBehaviour
 {
-    public GameObject canvasInventory;
-    public GameObject Ampolleta;
-    public GameObject AmpolletaItem;
-    public MouseLook mouseLook;
-    public PlayerMovement playerMovement;
+    private bool inventoryEnabled;
+    
+    public GameObject inventory;
 
-    // Start is called before the first frame update
-    void Start()
+    public int allSlots;
+
+    private int enabledSlot;
+
+    public GameObject[] slot;
+
+    public GameObject slotHandler;
+    public MouseLook mouseLook;
+    private void Start()
     {
         
+        allSlots = slotHandler.transform.childCount;
+
+        slot = new GameObject[allSlots];
+
+        for (int i = 0; i < allSlots; i++)
+        {
+            slot[i] = slotHandler.transform.GetChild(i).gameObject;
+
+            if(slot[i].GetComponent<Slot>().item == null)
+            {
+                slot[i].GetComponent<Slot>().empty = true;
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (Input.GetKey(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
-            canvasInventory.SetActive(true);
+            inventoryEnabled=!inventoryEnabled;
+        }
+
+        if (inventoryEnabled == true)
+        {
+            inventory.SetActive(true);
             mouseLook.mouseSensivility = 0;
-            playerMovement.speed = 0;
-            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
         }
-        else 
+        else
         {
-            canvasInventory.SetActive(false);
-            mouseLook.mouseSensivility = 400;
-            playerMovement.speed = 7.5f;
-            Cursor.visible = false;
+            inventory.SetActive(false);
+            mouseLook.mouseSensivility = 200;
             Cursor.lockState = CursorLockMode.Locked;
-
-        }
-
-        if(Ampolleta.activeSelf == false)
-        {
-            AmpolletaItem.SetActive(true);
+            Cursor.visible = false;
         }
     }
+
+
 }

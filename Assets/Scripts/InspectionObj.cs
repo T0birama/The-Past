@@ -4,17 +4,28 @@ using UnityEngine;
 
 public class InspectionObj : MonoBehaviour
 {
-    public GameObject[] inspectionObj;
-    private int currIndex;
+    public Item selectedObject;
+    public  List<Item>inspectionObj;
+    
 
     public void TurnOnInspection(int index)
     {
-        currIndex = index;
-        inspectionObj[index].SetActive(true); 
+        gameObject.SetActive(true);
+        
+        
+        for (int i = 0; i < inspectionObj.Count; i++)
+        {
+            inspectionObj[i].gameObject.SetActive(i == index);
+        }
+
+        selectedObject = inspectionObj[index];
     }
 
     public void TurnOffInspection()
     {
-        inspectionObj[currIndex].SetActive(false);
+        inspectionObj.ForEach(c => c.gameObject.SetActive(false));
+        selectedObject = null;
+        gameObject.SetActive(false);
+
     }
 }
