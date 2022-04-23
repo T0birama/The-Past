@@ -12,8 +12,9 @@ public class InpectionON : MonoBehaviour
     public GameObject Bombilla;
 
     public Inventory inventory;
+
     
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,8 @@ public class InpectionON : MonoBehaviour
                 mouseLook.mouseSensivility=200;
                 Bombilla.SetActive(false);
                 mouseLook.enabled = true;
+                this.enabled=false;
+                interactableOBJ.enabled=true;
             }
         } 
 

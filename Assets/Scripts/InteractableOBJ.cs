@@ -9,6 +9,7 @@ public class InteractableOBJ : MonoBehaviour
     public InpectionON inpectionON;
     public int index;
     public bool isOBJ = false;
+    public bool isVacio = false;
 
     public MouseLook mouseLook;
 
@@ -32,7 +33,11 @@ public class InteractableOBJ : MonoBehaviour
                 Cursor.visible = true;
                 mouseLook.enabled = false;
             }
+
+
         }
+
+       
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +45,10 @@ public class InteractableOBJ : MonoBehaviour
         if (other.CompareTag("ampolleta"))
         {
             isOBJ = true;
+        }
+        if (other.CompareTag("vacio"))
+        {
+            isVacio = true;
         }
 
     }
@@ -51,5 +60,9 @@ public class InteractableOBJ : MonoBehaviour
             isOBJ = false;
         }
 
+        if (other.CompareTag("vacio"))
+        {
+            isVacio = false;
+        }
     }
 }

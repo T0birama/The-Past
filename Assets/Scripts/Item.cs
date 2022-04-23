@@ -16,17 +16,8 @@ public class Item : MonoBehaviour
 
     private void Update()
     {
-        if(equipped == true)
-        {
-
-        }
+        
     }
 
-    public void ItemUsage()
-    {
-        if(type == "Luz")
-        {
-            equipped = true;
-        }
-    }
+   
 }
