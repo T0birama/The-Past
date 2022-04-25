@@ -28,7 +28,7 @@ public class Entra : MonoBehaviour
             Timeline.Play();
             locura.cordura += 0.01f;
             gameObject.SetActive(false);
-            volume.weight += 0.1f;
+            volume.weight += 0.01f;
 
         }
     }
