@@ -17,8 +17,8 @@ public class Polstergeist : MonoBehaviour
             cuadro1.SetActive(false);
             cuadro2.SetActive(true);
             gameObject.SetActive(false);
-            loc.cordura += 0.01f;
-            volume.weight += 0.01f;
+            loc.cordura += 0.1f;
+            volume.weight += 0.1f;
         }
     }
 }

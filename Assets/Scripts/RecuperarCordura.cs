@@ -1,12 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
 using UnityEngine.Rendering;
 
-public class Entra : MonoBehaviour
+public class RecuperarCordura : MonoBehaviour
 {
-    public PlayableDirector Timeline;
     public Locura locura;
     public Volume volume;
     // Start is called before the first frame update
@@ -21,16 +19,14 @@ public class Entra : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (other.CompareTag("Player") && locura.cordura > 0 )
         {
-            Timeline.Play();
-            locura.cordura += 0.1f;
-            gameObject.SetActive(false);
-            volume.weight += 0.1f;
-
+            locura.cordura -=0.01f * Time.deltaTime;
+            volume.weight -=0.01f * Time.deltaTime;
+            Debug.Log("ESTOY DENTRO");
         }
+       
     }
-
 }

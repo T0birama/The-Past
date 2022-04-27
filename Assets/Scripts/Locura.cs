@@ -27,6 +27,7 @@ public class Locura : MonoBehaviour
         if(cordura == 1f)
         {
            color.a = 0;
+            Debug.Log("MURIO");
         }
         else
         if(cordura == 0.9f)
@@ -78,6 +79,8 @@ public class Locura : MonoBehaviour
         {
             color.a = 100f;
         }
+
+        cordura +=0.001f * Time.deltaTime; 
 
         
 
