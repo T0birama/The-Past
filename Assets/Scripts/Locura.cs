@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.Rendering;
 
 public class Locura : MonoBehaviour
 {
     
     public float cordura = 0f;
     public Image cerebro;
+    public Volume volume;
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +83,9 @@ public class Locura : MonoBehaviour
         }
 
         cordura +=0.001f * Time.deltaTime; 
+        volume.weight += 0.01f * Time.deltaTime;
+
+
 
         
 

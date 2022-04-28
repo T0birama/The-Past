@@ -9,14 +9,14 @@ public class InteractableOBJ : MonoBehaviour
     public InpectionON inpectionON;
     public int index;
     public bool isOBJ = false;
-    public bool isVacio = false;
+    public GameObject vacio = null;
 
     public MouseLook mouseLook;
 
 
     void Start()
     {
-        
+        isOBJ = false;
     }
 
     // Update is called once per frame
@@ -35,20 +35,20 @@ public class InteractableOBJ : MonoBehaviour
             }
 
 
-        }
-
-       
+        }      
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("ampolleta"))
         {
+            inpectionON.inspectedObj = other.gameObject;
             isOBJ = true;
         }
         if (other.CompareTag("vacio"))
         {
-            isVacio = true;
+            inpectionON.inspectedObj = other.gameObject;
+            vacio = other.gameObject;
         }
 
     }
@@ -62,7 +62,7 @@ public class InteractableOBJ : MonoBehaviour
 
         if (other.CompareTag("vacio"))
         {
-            isVacio = false;
+            vacio = null;
         }
     }
 }

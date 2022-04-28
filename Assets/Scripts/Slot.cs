@@ -10,15 +10,11 @@ public class Slot : MonoBehaviour
     public int ID;
     public string type;
     public string description;
-    public GameObject ampolleta;
-   
 
-  
 
     public bool empty;
     public Sprite icon;
 
-    public Transform inspection;
 
     public Transform slotIconGameObject;
     public InteractableOBJ interactable;
@@ -34,23 +30,24 @@ public class Slot : MonoBehaviour
     public void UpdateSlot()
     {
         slotIconGameObject.GetComponent<Image>().sprite = icon;
+        empty = false;
     }
 
     public void UseItem()
     {
-        if(interactable.isVacio == true)
+        if(interactable.vacio != null)
         {
-            item.SetActive(false);
-            slotIconGameObject.GetComponent<Image>().sprite = null;
-            ampolleta.SetActive(true);
-            slotIconGameObject = inspection.transform.GetChild(0);
-            
+            interactable.vacio.transform.GetChild(0).gameObject.SetActive(true);
+           RemoveItem();   
         }
-        
-
     }
 
-    
+    public void RemoveItem()
+    {
+        Destroy(item);
+        slotIconGameObject.GetComponent<Image>().sprite = null;
+        empty = true;
+    }
 
 
 }

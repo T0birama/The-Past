@@ -9,20 +9,13 @@ public class InpectionON : MonoBehaviour
 
     public InteractableOBJ interactableOBJ;
     public MouseLook mouseLook;
-    public GameObject Bombilla;
+    //public GameObject Bombilla;
 
     public Inventory inventory;
 
+    public GameObject inspectedObj = null;
+
     
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (Inspection.activeSelf == true)
@@ -32,15 +25,14 @@ public class InpectionON : MonoBehaviour
                 Item item = inspectionObj.selectedObject;
                 if(item != null)
                 {
-                    AddItem(item.gameObject, item.id, item.type, item.description, item.icon);
-
+                    //AddItem(item.gameObject, item.id, item.type, item.description, item.icon);
+                    AddItem(inspectedObj, item.id, item.type, item.description, item.icon);
                     inspectionObj.TurnOnInspection(0);
-
                 }
 
                 Inspection.SetActive(false);
                 mouseLook.mouseSensivility=200;
-                Bombilla.SetActive(false);
+                interactableOBJ.isOBJ = false;
                 mouseLook.enabled = true;
                 this.enabled=false;
                 interactableOBJ.enabled=true;
