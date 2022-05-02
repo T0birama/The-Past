@@ -12,11 +12,13 @@ public class iAmpolleta : MonoBehaviour
     [Header("Objetos Apagar")]
     public GameObject O1;
     public GameObject O2;
+    public GameObject O3;
 
 
     [Header("Objetos Prender")]
     public GameObject OP1;
-    
+    public GameObject OP2;
+
 
 
 
@@ -61,6 +63,7 @@ public class iAmpolleta : MonoBehaviour
     {
         O1.SetActive(false);
         O1.SetActive(false);
+        O3.SetActive(false);
 
 
     }
@@ -68,6 +71,7 @@ public class iAmpolleta : MonoBehaviour
     void Prenderobjs()
     {
         OP1.SetActive(true);
-        
+        OP2.SetActive(true);
+
     }
 }

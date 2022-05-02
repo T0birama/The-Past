@@ -13,11 +13,12 @@ public class Vampolleta : MonoBehaviour
     public GameObject O1;
     public GameObject O2;
     public GameObject O3;
+    public GameObject O4;
+    public GameObject O5;
 
 
-    [Header("Objetos Prender")]
-    public GameObject OP1;
-   
+
+
 
 
 
@@ -63,6 +64,8 @@ public class Vampolleta : MonoBehaviour
         O1.SetActive(false);
         O2.SetActive(false);
         O3.SetActive(false);
+        O4.SetActive(false);
+        O5.SetActive(false);
 
 
 
@@ -71,7 +74,7 @@ public class Vampolleta : MonoBehaviour
 
     void Prenderobjs()
     {
-        OP1.SetActive(true);
+        
        
 
     }
