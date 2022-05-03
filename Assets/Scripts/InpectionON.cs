@@ -9,9 +9,9 @@ public class InpectionON : MonoBehaviour
 
     public InteractableOBJ interactableOBJ;
     public MouseLook mouseLook;
-    //public GameObject Bombilla;
 
-    public Inventory inventory;
+
+    
 
     public GameObject inspectedObj = null;
 
@@ -22,14 +22,7 @@ public class InpectionON : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Item item = inspectionObj.selectedObject;
-                if(item != null)
-                {
-                    //AddItem(item.gameObject, item.id, item.type, item.description, item.icon);
-                    AddItem(inspectedObj, item.id, item.type, item.description, item.icon);
-                    inspectionObj.TurnOnInspection(0);
-                }
-
+                inspectionObj.TurnOnInspection(0);
                 Inspection.SetActive(false);
                 mouseLook.mouseSensivility=200;
                 interactableOBJ.isOBJ = false;
@@ -53,34 +46,7 @@ public class InpectionON : MonoBehaviour
         }
     }
 
-    public void AddItem(GameObject itemObject , int itemID, string itemType, string itemDescription, Sprite itemIcon)
-    {
-        for (int i = 0; i < inventory.allSlots; i++)
-        {
-            if (inventory.slot[i].GetComponent<Slot>().empty)
-            {
-                itemObject.GetComponent<Item>().pickedUp = true;
-
-                inventory.slot[i].GetComponent<Slot>().item = itemObject;
-                inventory.slot[i].GetComponent<Slot>().ID = itemID;
-                inventory.slot[i].GetComponent<Slot>().type = itemType;
-                inventory.slot[i].GetComponent<Slot>().description = itemDescription;
-                inventory.slot[i].GetComponent<Slot>().icon = itemIcon;
-
-                itemObject.transform.parent = inventory.slot[i].transform;
-                itemObject.SetActive(false);
-
-                inventory.slot[i].GetComponent<Slot>().UpdateSlot(); 
-
-
-                inventory.slot[i].GetComponent<Slot>().empty = false;
-
-
-            }
-
-            return;
-        }
-    }
+    
 
     
 

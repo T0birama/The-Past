@@ -8,6 +8,7 @@ public class iAmpolleta : MonoBehaviour
     public GameObject Collider1;
     public GameObject CanvasPuedoAgarrar;
     public GameObject CanvasImageObjeto;
+    public Inventory inventory;
     
     [Header("Objetos Apagar")]
     public GameObject O1;
@@ -33,6 +34,9 @@ public class iAmpolleta : MonoBehaviour
                 Objeto1.SetActive(false);
                 Collider1.SetActive(true);
                 CanvasImageObjeto.SetActive(true);
+
+                inventory.TimelineApagando.Play();
+
 
                 Apagarobj();
                 Prenderobjs();
@@ -64,6 +68,7 @@ public class iAmpolleta : MonoBehaviour
         O1.SetActive(false);
         O1.SetActive(false);
         O3.SetActive(false);
+        
 
 
     }
