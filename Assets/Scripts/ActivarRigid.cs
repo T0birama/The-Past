@@ -7,7 +7,7 @@ public class ActivarRigid : MonoBehaviour
 {
     public Rigidbody rb;
     public Locura locura;
-    public Volume volume;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +26,7 @@ public class ActivarRigid : MonoBehaviour
         {
             rb.isKinematic = false;
             locura.cordura += 0.1f;
-            volume.weight += 0.1f;
+            locura.volume.weight += 0.1f;
             gameObject.SetActive(false);
         }
     }

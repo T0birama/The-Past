@@ -6,7 +6,7 @@ using UnityEngine.Rendering;
 public class RecuperarCordura : MonoBehaviour
 {
     public Locura locura;
-    public Volume volume;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,10 +21,10 @@ public class RecuperarCordura : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && locura.cordura > 0 && volume.weight > 0  )
+        if (other.CompareTag("Player") && locura.cordura > 0 && locura.volume.weight > 0  )
         {
             locura.cordura -=0.01f * Time.deltaTime;
-            volume.weight -=0.1f * Time.deltaTime;
+            locura.volume.weight -=0.1f * Time.deltaTime;
             Debug.Log("ESTOY DENTRO");
         }
        

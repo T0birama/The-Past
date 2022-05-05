@@ -8,7 +8,7 @@ public class Entra : MonoBehaviour
 {
     public PlayableDirector Timeline;
     public Locura locura;
-    public Volume volume;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +28,7 @@ public class Entra : MonoBehaviour
             Timeline.Play();
             locura.cordura += 0.1f;
             gameObject.SetActive(false);
-            volume.weight += 0.1f;
+            locura.volume.weight += 0.1f;
 
         }
     }

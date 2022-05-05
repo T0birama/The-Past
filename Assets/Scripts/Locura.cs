@@ -25,8 +25,9 @@ public class Locura : MonoBehaviour
         cerebro.color = new Color(cerebro.color.r, cerebro.color.g, cerebro.color.b, cordura);
 
         Color color = cerebro.color;
-       
-        if(cordura == 1f)
+
+        cordura = Mathf.Clamp(cordura, 0, 1);
+        if (cordura == 1f)
         {
            color.a = 0;
             Debug.Log("MURIO");
@@ -79,10 +80,13 @@ public class Locura : MonoBehaviour
         else
         if (cordura == 0f)
         {
+            
             color.a = 100f;
         }
 
-        cordura +=0.001f * Time.deltaTime; 
+        volume.weight = Mathf.Clamp(volume.weight,0,1);
+
+        cordura +=0.01f * Time.deltaTime; 
         volume.weight += 0.01f * Time.deltaTime;
 
 

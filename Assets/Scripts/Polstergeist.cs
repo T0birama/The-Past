@@ -8,7 +8,7 @@ public class Polstergeist : MonoBehaviour
     public GameObject cuadro1;
     public GameObject cuadro2;
     public Locura loc;
-    public Volume volume;
+    
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +18,7 @@ public class Polstergeist : MonoBehaviour
             cuadro2.SetActive(true);
             gameObject.SetActive(false);
             loc.cordura += 0.1f;
-            volume.weight += 0.1f;
+            loc.volume.weight += 0.1f;
         }
     }
 }
