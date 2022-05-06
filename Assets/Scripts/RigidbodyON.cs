@@ -8,6 +8,8 @@ public class RigidbodyON : MonoBehaviour
     public GameObject luz;
     public GameObject luz2;
     public GameObject sombra;
+    public GameObject Tvprendio;
+   
 
     public int index;
     // Start is called before the first frame update
@@ -29,6 +31,8 @@ public class RigidbodyON : MonoBehaviour
         luz.SetActive(false);
         luz2.SetActive(false);
         sombra.SetActive(true);
+        Tvprendio.SetActive(true);
+        
 
     }
 }

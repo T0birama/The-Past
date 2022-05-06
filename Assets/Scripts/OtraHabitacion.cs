@@ -26,17 +26,8 @@ public class OtraHabitacion : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                oN1.enabled = true;
-                oN2.enabled = true;
-                oN3.enabled = true;
-                oN4.enabled = true;
-                oN5.enabled = true;
-                oN6.enabled = true;
-
-
+                StartCoroutine(Daded());
                 faded.Play();
-                player.transform.position = SpawnearBasement.transform.position;
-                LlaveImage.SetActive(false);
             }
         }
     }
@@ -57,5 +48,21 @@ public class OtraHabitacion : MonoBehaviour
             TextoPuedeUsar.SetActive(false);
             isOnDoor = false;
         }
+    }
+
+    IEnumerator Daded()
+    {
+        yield return new WaitForSeconds(0.5f);
+        oN1.enabled = true;
+        oN2.enabled = true;
+        oN3.enabled = true;
+        oN4.enabled = true;
+        oN5.enabled = true;
+        oN6.enabled = true;
+
+
+        
+        player.transform.position = SpawnearBasement.transform.position;
+        LlaveImage.SetActive(false);
     }
 }
