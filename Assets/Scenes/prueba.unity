@@ -24081,7 +24081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b71e0cc23da335438dfafc062f3b42f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  encender: {fileID: 707417761}
+  encender: {fileID: 1074715623}
 --- !u!65 &1083940158
 BoxCollider:
   m_ObjectHideFlags: 0

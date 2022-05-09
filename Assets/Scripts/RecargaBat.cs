@@ -29,6 +29,7 @@ public class RecargaBat : MonoBehaviour
                 }
                 lu.linterna.intensity = 1772.727f;
                 Pilas.SetActive(false);
+                TextPuedoAPilas.SetActive(false);
             }
         }
 
