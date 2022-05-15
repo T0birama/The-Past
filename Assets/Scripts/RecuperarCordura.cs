@@ -23,7 +23,7 @@ public class RecuperarCordura : MonoBehaviour
     {
         if (other.CompareTag("Player") && locura.cordura > 0 && locura.volume.weight > 0  )
         {
-            locura.cordura -=0.01f * Time.deltaTime;
+            locura.cordura -=0.1f * Time.deltaTime;
             locura.volume.weight -=0.1f * Time.deltaTime;
             Debug.Log("ESTOY DENTRO");
         }
