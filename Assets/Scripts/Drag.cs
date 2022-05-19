@@ -22,7 +22,7 @@ public class Drag : MonoBehaviour
 
             Vector3 mouse = new Vector3(mouseY, -mouseX);
 
-            transform.eulerAngles += mouse;
+            transform.rotation = transform.rotation * Quaternion.Euler(mouse);
         }
 
     }

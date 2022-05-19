@@ -10,6 +10,7 @@ public class Item : MonoBehaviour
     public Locura loc;
     public GameObject TextoConsumirMedicamento;
     bool IsOnMedi;
+    public GameObject imageMedic;
 
 
     private void Update()
@@ -22,6 +23,7 @@ public class Item : MonoBehaviour
                 loc.cordura = 0f ;
                 loc.volume.weight = 0f ;
                 TextoConsumirMedicamento.SetActive(false);
+                imageMedic.SetActive(false);
 }
         }
     }

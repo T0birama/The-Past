@@ -8,6 +8,7 @@ public class RecargaBat : MonoBehaviour
     public GameObject SpotLinterna;
     public GameObject Pilas;
     public GameObject TextPuedoAPilas;
+    public GameObject imageBat;
 
     bool isOnPilas;
     // Start is called before the first frame update
@@ -30,6 +31,7 @@ public class RecargaBat : MonoBehaviour
                 lu.linterna.intensity = 1772.727f;
                 Pilas.SetActive(false);
                 TextPuedoAPilas.SetActive(false);
+                imageBat.SetActive(false);
             }
         }
 
