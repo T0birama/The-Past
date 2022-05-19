@@ -22228,6 +22228,7 @@ MonoBehaviour:
   SpotLinterna: {fileID: 493099554}
   Pilas: {fileID: 911166183}
   TextPuedoAPilas: {fileID: 1101989401}
+  imageBat: {fileID: 1336491601}
 --- !u!1 &916029999
 GameObject:
   m_ObjectHideFlags: 0
@@ -25705,6 +25706,7 @@ MonoBehaviour:
   ConsumibleMedicamento: {fileID: 1063511585}
   loc: {fileID: 181311058}
   TextoConsumirMedicamento: {fileID: 2080162791}
+  imageMedic: {fileID: 686278600}
 --- !u!1 &1073693414
 GameObject:
   m_ObjectHideFlags: 0
