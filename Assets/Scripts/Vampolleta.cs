@@ -35,7 +35,7 @@ public class Vampolleta : MonoBehaviour
                 Collider1.SetActive(true);
 
                 Apagarobj();
-                Prenderobjs();
+                
 
             }
         }
@@ -43,7 +43,7 @@ public class Vampolleta : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             isOn = true;
             CanvasPuedoDejar.SetActive(true);
@@ -52,7 +52,7 @@ public class Vampolleta : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             isOn = false;
             CanvasPuedoDejar.SetActive(false);
@@ -72,10 +72,4 @@ public class Vampolleta : MonoBehaviour
 
     }
 
-    void Prenderobjs()
-    {
-        
-       
-
-    }
 }

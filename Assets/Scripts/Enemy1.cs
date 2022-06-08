@@ -21,7 +21,7 @@ public class Enemy1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Mira"))
+        if (other.CompareTag("enemymira"))
         {
             Enemigo.speed = 0;
         }
@@ -30,7 +30,7 @@ public class Enemy1 : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Mira"))
+        if (other.CompareTag("enemymira"))
         {
             Enemigo.speed = 0.6f;
         }

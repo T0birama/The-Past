@@ -32,7 +32,7 @@ public class PrenderApagar : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             isONTV = true;
             apagar.SetActive(true);
@@ -41,7 +41,7 @@ public class PrenderApagar : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             isONTV = false;
             apagar.SetActive(false);

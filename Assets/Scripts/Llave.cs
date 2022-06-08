@@ -34,7 +34,7 @@ public class Llave : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             TextoPuedoAgarrar.SetActive(true);
             isLlave = true;
@@ -42,7 +42,7 @@ public class Llave : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             TextoPuedoAgarrar.SetActive(false);
             isLlave = false;

@@ -39,7 +39,7 @@ public class RecargaBat : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             isOnPilas = true;
             TextPuedoAPilas.SetActive(true);
@@ -47,7 +47,7 @@ public class RecargaBat : MonoBehaviour
     }
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             isOnPilas = false;
             TextPuedoAPilas.SetActive(false);

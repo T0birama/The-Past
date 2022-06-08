@@ -47,7 +47,7 @@ public class iAmpolleta : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             isOn = true;
             CanvasPuedoAgarrar.SetActive(true);
@@ -56,7 +56,7 @@ public class iAmpolleta : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Mira"))
         {
             isOn = false;
             CanvasPuedoAgarrar.SetActive(false);
