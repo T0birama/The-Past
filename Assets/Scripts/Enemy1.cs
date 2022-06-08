@@ -25,6 +25,10 @@ public class Enemy1 : MonoBehaviour
         {
             Enemigo.speed = 0;
         }
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("Derrota");
+        }
         
     }
 
@@ -32,7 +36,7 @@ public class Enemy1 : MonoBehaviour
     {
         if (other.CompareTag("enemymira"))
         {
-            Enemigo.speed = 0.6f;
+            Enemigo.speed = 0.6f * Time.deltaTime;
         }
         
     }
