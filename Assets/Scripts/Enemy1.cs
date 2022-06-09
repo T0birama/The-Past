@@ -27,7 +27,7 @@ public class Enemy1 : MonoBehaviour
     void Update()
     {
         Vector3 viewPos = virtualCamera.WorldToViewportPoint(transform.position);
-        if(viewPos.x > 0)
+        if (viewPos.x > 0)
         {
             Debug.Log("estoy viendo en la derecha");
             isLooking = true;
@@ -35,7 +35,7 @@ public class Enemy1 : MonoBehaviour
             SCP173.GetComponent<MeshRenderer>().enabled = true;
             trigger.SetActive(false);
         }
-        else 
+        else
         {
             Debug.Log("No lo veo");
             upOrDown = true;
@@ -58,7 +58,7 @@ public class Enemy1 : MonoBehaviour
         transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
     }
-   
+
 
     IEnumerator movimientoEnemy()
     {
