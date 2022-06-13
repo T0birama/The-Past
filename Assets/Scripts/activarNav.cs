@@ -11,7 +11,7 @@ public class activarNav : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             enemy.SCP173Nav.enabled = true;
-            enemy.isLooking = false;
+            
         }
     }
 }

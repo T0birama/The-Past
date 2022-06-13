@@ -21,6 +21,17 @@ public class Necesitas : MonoBehaviour
             {
                 necesitasLa.SetActive(true);
                 StartCoroutine(apago());
+                
+            }
+        }
+
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.forward * 100, out hit))
+        {
+            if (hit.collider.CompareTag("Ampolleta"))
+            {
+                //hit.collider.GetComponent<iAmpolleta>().a
             }
         }
     }

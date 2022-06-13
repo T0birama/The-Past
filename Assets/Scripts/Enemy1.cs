@@ -26,13 +26,14 @@ public class Enemy1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 viewPos = virtualCamera.WorldToViewportPoint(transform.position);
-        if (viewPos.x > 0)
+        // Vector3 viewPos = virtualCamera.WorldToViewportPoint(transform.position);
+        /*Renderer renderer = SCP173.GetComponent<Renderer>();
+
+        if (renderer.isVisible)
         {
-            Debug.Log("estoy viendo en la derecha");
+            Debug.Log("estoy viendo");
             isLooking = true;
             upOrDown = false;
-            SCP173.GetComponent<MeshRenderer>().enabled = true;
             trigger.SetActive(false);
         }
         else
@@ -40,10 +41,8 @@ public class Enemy1 : MonoBehaviour
             Debug.Log("No lo veo");
             upOrDown = true;
             isLooking = false;
-
-            SCP173.GetComponent<MeshRenderer>().enabled = false;
             trigger.SetActive(true);
-        }
+        }*/
 
         if (isLooking == false)
         {
@@ -80,18 +79,17 @@ public class Enemy1 : MonoBehaviour
 
     private void OnBecameVisible()
     {
-        isVisible = true;
-        if (upOrDown == false)
-        {
-            Debug.Log("Lo estoy viendoo");
-            isLooking = true;
-        }
+        Debug.Log("estoy viendo");
+        isLooking = true;
+        upOrDown = false;
+        trigger.SetActive(false);
     }
     private void OnBecameInvisible()
     {
-        Debug.Log("NO Lo veoo");
-        isVisible = false;
+        Debug.Log("No lo veo");
+        upOrDown = true;
         isLooking = false;
+        trigger.SetActive(true);
     }
 
 
