@@ -22,7 +22,7 @@ public class Vampolleta : MonoBehaviour
 
 
 
-    bool isOn;
+    public bool isOn;
     // Update is called once per frame
     void Update()
     {
@@ -41,7 +41,7 @@ public class Vampolleta : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Mira"))
         {
@@ -57,7 +57,7 @@ public class Vampolleta : MonoBehaviour
             isOn = false;
             CanvasPuedoDejar.SetActive(false);
         }
-    }
+    }*/
 
     void Apagarobj()
     {

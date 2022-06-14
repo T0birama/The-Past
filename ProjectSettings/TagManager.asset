@@ -8,6 +8,9 @@ TagManager:
   - vacio
   - Mira
   - enemymira
+  - ampolletavacia
+  - ampolleta1
+  - ampolletavacia1
   layers:
   - Default
   - TransparentFX
