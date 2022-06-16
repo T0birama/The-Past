@@ -9,7 +9,7 @@ public class Item : MonoBehaviour
     public GameObject ConsumibleMedicamento;
     public Locura loc;
     public GameObject TextoConsumirMedicamento;
-    bool IsOnMedi;
+    public bool IsOnMedi;
     public GameObject imageMedic;
 
 
@@ -29,22 +29,6 @@ public class Item : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            IsOnMedi = true;
-            TextoConsumirMedicamento.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            IsOnMedi = false;
-            TextoConsumirMedicamento.SetActive(false);
-        }
-    }
+    
 
 }

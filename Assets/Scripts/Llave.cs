@@ -11,7 +11,7 @@ public class Llave : MonoBehaviour
     public GameObject ColliderNecesitasLlave;
     public Inventory inventory;
 
-    bool isLlave;
+    public bool isLlave;
   
 
     // Update is called once per frame
@@ -32,20 +32,5 @@ public class Llave : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Mira"))
-        {
-            TextoPuedoAgarrar.SetActive(true);
-            isLlave = true;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Mira"))
-        {
-            TextoPuedoAgarrar.SetActive(false);
-            isLlave = false;
-        }
-    }
+
 }

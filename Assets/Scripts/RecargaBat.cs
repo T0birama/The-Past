@@ -10,7 +10,7 @@ public class RecargaBat : MonoBehaviour
     public GameObject TextPuedoAPilas;
     public GameObject imageBat;
 
-    bool isOnPilas;
+    public bool isOnPilas;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,21 +37,6 @@ public class RecargaBat : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Mira"))
-        {
-            isOnPilas = true;
-            TextPuedoAPilas.SetActive(true);
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Mira"))
-        {
-            isOnPilas = false;
-            TextPuedoAPilas.SetActive(false);
-        }
-    }
+   
 
 }

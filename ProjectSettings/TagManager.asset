@@ -11,6 +11,10 @@ TagManager:
   - ampolletavacia
   - ampolleta1
   - ampolletavacia1
+  - medicamento
+  - pilas
+  - linterna
+  - llave
   layers:
   - Default
   - TransparentFX
@@ -21,7 +25,7 @@ TagManager:
   - Ground
   - InspectionVolume
   - Near Objects
-  - 
+  - ParaRaycast
   - 
   - 
   - 

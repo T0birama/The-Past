@@ -25,8 +25,6 @@ public class RecuperarCordura : MonoBehaviour
         {
             locura.cordura -=0.05f * Time.deltaTime;
             locura.volume.weight -=0.05f * Time.deltaTime;
-            Debug.Log("ESTOY DENTRO");
         }
-       
     }
 }

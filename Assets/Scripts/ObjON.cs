@@ -12,7 +12,7 @@ public class ObjON : MonoBehaviour
     public Inventory inventory;
     public GameObject TextLinternaPuedo;
 
-    bool isOnlinte;
+    public bool isOnlinte;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,21 +35,5 @@ public class ObjON : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Mira"))
-        {
-            TextLinternaPuedo.SetActive(true);
-            isOnlinte = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Mira"))
-        {
-            TextLinternaPuedo.SetActive(false);
-            isOnlinte = false;
-        }
-    }
+   
 }

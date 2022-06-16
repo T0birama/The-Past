@@ -1,10 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Playables;
 
 public class MouseLook : MonoBehaviour
 {
+    public Texture2D cursorActivo, cursorNada;
+
+    public PlayableDirector timelineCanvas;
+    public PlayableDirector timelineCrossAir;
+
     public iAmpolleta ampolleta;
     public iAmpolleta ampolleta1;
     public iAmpolleta ampolleta2;
@@ -14,7 +19,17 @@ public class MouseLook : MonoBehaviour
     public Vampolleta vampolleta1;
     public Vampolleta vampolleta2;
     
+    public Item item;
 
+    public ObjON linterna;
+
+    public Llave llave;
+
+    public RecargaBat pilas;
+
+    public bool OnAnimation;
+
+    public float distance = 20;
     public float mouseSensivility = 200f;
 
     public Transform playerBody;
@@ -24,6 +39,7 @@ public class MouseLook : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = true;
     }
 
 
@@ -31,63 +47,126 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;
+        AlternativaRaycast();
 
-        if (Physics.Raycast(transform.position, transform.forward * 900, out hit))
+        
+
+        RaycastHit[] hits= Physics.RaycastAll(transform.position, transform.forward, distance);
+        Debug.DrawRay(transform.position, transform.forward * distance, Color.red);
+
+        foreach (RaycastHit hit in hits)
         {
-            Debug.DrawRay(transform.position , transform.forward, Color.red);
+            Debug.Log(hit.collider.tag);
 
             if (hit.collider.CompareTag("ampolleta"))
             {
-                ampolleta.CanvasPuedoAgarrar.SetActive(true);
-                ampolleta.isOn = true;
-               
-            }
-            else
-            {
-                ampolleta.CanvasPuedoAgarrar.SetActive(false);
-                ampolleta.isOn = false;
-                
-            }
+                timelineCanvas.Play();
             
-            if (hit.collider.CompareTag("ampolletavacia"))
-            {
-                vampolleta.isOn= true;
-                vampolleta.CanvasPuedoDejar.SetActive(true);
+                ampolleta.isOn = true;
+                OnAnimation=true;
+                break;
                 
             }
-            else
+
+            else if (hit.collider.CompareTag("ampolleta1"))
             {
-                vampolleta.isOn = false;
-                vampolleta.CanvasPuedoDejar.SetActive(false);
+                timelineCanvas.Play();
+               
+                ampolleta1.isOn = true;
+                OnAnimation = true;
+                break;
                
             }
 
-            if (hit.collider.CompareTag("ampolleta1"))
+            else if(hit.collider.CompareTag("ampolletavacia"))
             {
-
-                ampolleta1.CanvasPuedoAgarrar.SetActive(true);
-                ampolleta1.isOn = true;
-            }
-            else
-            {
-
-                ampolleta1.CanvasPuedoAgarrar.SetActive(false);
-                ampolleta1.isOn = false;
-            }
-            if (hit.collider.CompareTag("ampolletavacia1"))
-            {
+                timelineCanvas.Play();
+                vampolleta.isOn = true;
+                OnAnimation = true;
                 
+                break;
+               
+
+            }
+
+            else if(hit.collider.CompareTag("ampolletavacia1"))
+            {
+                timelineCanvas.Play();
                 vampolleta1.isOn = true;
-                vampolleta1.CanvasPuedoDejar.SetActive(true);
+                OnAnimation = true;
+                
+                break;
+               
             }
+            else if (hit.collider.CompareTag("medicamento"))
+            {
+                timelineCanvas.Play();
+                item.IsOnMedi = true;
+                OnAnimation = true;
+                
+                break;
+              
+            }
+            else if (hit.collider.CompareTag("linterna"))
+            {
+                timelineCanvas.Play();
+                
+                linterna.isOnlinte = true;
+                OnAnimation = true;
+                break;
+               
+            }
+            else if (hit.collider.CompareTag("llave")) 
+            {
+                timelineCanvas.Play();
+                
+                llave.isLlave = true;
+                OnAnimation = true;
+                break;
+               
+            }
+            else if (hit.collider.CompareTag("pilas"))
+            {
+                timelineCanvas.Play();
+                pilas.isOnPilas = true;
+               
+                OnAnimation = true;
+                break;
+               
+            }
+
             else
             {
+                if (OnAnimation)
+                {
+                    timelineCrossAir.Play();
+                    OnAnimation = false;
+                    timelineCanvas.Stop();
+                }
                 
+
                 vampolleta1.isOn = false;
-                vampolleta1.CanvasPuedoDejar.SetActive(false);
+                vampolleta.isOn = false;
+                ampolleta.isOn = false;
+                ampolleta1.isOn = false;
+
+                item.IsOnMedi = false;
+                
+
+                
+                linterna.isOnlinte = false;
+
+                
+                llave.isLlave = false;
+
+                pilas.isOnPilas = false;
+                
+                
             }
+
         }
+
+        
 
         float mouseX = Input.GetAxis("Mouse X") * mouseSensivility * Time.deltaTime; 
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensivility * Time.deltaTime;
@@ -96,5 +175,135 @@ public class MouseLook : MonoBehaviour
         xRotation = Mathf.Clamp(xRotation, -90f , 90f);
         transform.localRotation = Quaternion.Euler(xRotation,0f,0f);
         playerBody.Rotate(Vector3.up * mouseX);
+    }
+
+
+    public LayerMask layerMask;
+    void AlternativaRaycast()
+    {
+        Ray ray = new Ray(transform.position , transform.forward);
+        RaycastHit hit;
+
+        if(Physics.Raycast(ray,out hit, distance,layerMask))
+        {
+            Cursor.SetCursor(cursorActivo, Vector2.zero, CursorMode.Auto);
+
+            print("CHOCO el RAYO");
+            /*
+            
+            if (hit.collider.CompareTag("ampolleta"))
+            {
+                timelineCanvas.Play();
+
+                ampolleta.isOn = true;
+                OnAnimation = true;
+                
+
+            }
+
+            else if (hit.collider.CompareTag("ampolleta1"))
+            {
+                timelineCanvas.Play();
+
+                ampolleta1.isOn = true;
+                OnAnimation = true;
+                
+
+            }
+
+            else if (hit.collider.CompareTag("ampolletavacia"))
+            {
+                timelineCanvas.Play();
+                vampolleta.isOn = true;
+                OnAnimation = true;
+
+                
+
+
+            }
+
+            else if (hit.collider.CompareTag("ampolletavacia1"))
+            {
+                timelineCanvas.Play();
+                vampolleta1.isOn = true;
+                OnAnimation = true;
+
+                
+
+            }
+            else if (hit.collider.CompareTag("medicamento"))
+            {
+                timelineCanvas.Play();
+                item.IsOnMedi = true;
+                OnAnimation = true;
+
+                
+
+            }
+            else if (hit.collider.CompareTag("linterna"))
+            {
+                timelineCanvas.Play();
+
+                linterna.isOnlinte = true;
+                OnAnimation = true;
+               
+
+            }
+            else if (hit.collider.CompareTag("llave"))
+            {
+                timelineCanvas.Play();
+
+                llave.isLlave = true;
+                OnAnimation = true;
+               
+
+            }
+            else if (hit.collider.CompareTag("pilas"))
+            {
+                timelineCanvas.Play();
+                pilas.isOnPilas = true;
+
+                OnAnimation = true;
+               
+
+            }
+            else
+            {
+                if (OnAnimation)
+                {
+                    timelineCrossAir.Play();
+                    OnAnimation = false;
+                    timelineCanvas.Stop();
+                }
+
+
+                vampolleta1.isOn = false;
+                vampolleta.isOn = false;
+                ampolleta.isOn = false;
+                ampolleta1.isOn = false;
+
+                item.IsOnMedi = false;
+
+
+
+                linterna.isOnlinte = false;
+
+
+                llave.isLlave = false;
+
+                pilas.isOnPilas = false;
+
+
+            }
+            */
+
+        }
+        else
+        {
+            print("NO HAY NADA");
+            Cursor.SetCursor(cursorNada, Vector2.zero, CursorMode.Auto);
+        }
+
+
     }
 }
