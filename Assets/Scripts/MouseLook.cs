@@ -39,7 +39,7 @@ public class MouseLook : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = true;
+        
     }
 
 
@@ -47,17 +47,17 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AlternativaRaycast();
-
         
 
+        
+        
         RaycastHit[] hits= Physics.RaycastAll(transform.position, transform.forward, distance);
         Debug.DrawRay(transform.position, transform.forward * distance, Color.red);
 
         foreach (RaycastHit hit in hits)
         {
             Debug.Log(hit.collider.tag);
-
+            
             if (hit.collider.CompareTag("ampolleta"))
             {
                 timelineCanvas.Play();
@@ -184,20 +184,16 @@ public class MouseLook : MonoBehaviour
         Ray ray = new Ray(transform.position , transform.forward);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray,out hit, distance,layerMask))
+        if(Physics.Raycast(ray,out hit, distance))
         {
-            Cursor.SetCursor(cursorActivo, Vector2.zero, CursorMode.Auto);
 
-            print("CHOCO el RAYO");
-            /*
-            
             if (hit.collider.CompareTag("ampolleta"))
             {
                 timelineCanvas.Play();
 
                 ampolleta.isOn = true;
                 OnAnimation = true;
-                
+              
 
             }
 
@@ -208,7 +204,6 @@ public class MouseLook : MonoBehaviour
                 ampolleta1.isOn = true;
                 OnAnimation = true;
                 
-
             }
 
             else if (hit.collider.CompareTag("ampolletavacia"))
@@ -217,7 +212,7 @@ public class MouseLook : MonoBehaviour
                 vampolleta.isOn = true;
                 OnAnimation = true;
 
-                
+              
 
 
             }
@@ -237,7 +232,7 @@ public class MouseLook : MonoBehaviour
                 item.IsOnMedi = true;
                 OnAnimation = true;
 
-                
+            
 
             }
             else if (hit.collider.CompareTag("linterna"))
@@ -246,7 +241,7 @@ public class MouseLook : MonoBehaviour
 
                 linterna.isOnlinte = true;
                 OnAnimation = true;
-               
+             
 
             }
             else if (hit.collider.CompareTag("llave"))
@@ -255,7 +250,7 @@ public class MouseLook : MonoBehaviour
 
                 llave.isLlave = true;
                 OnAnimation = true;
-               
+              
 
             }
             else if (hit.collider.CompareTag("pilas"))
@@ -264,16 +259,17 @@ public class MouseLook : MonoBehaviour
                 pilas.isOnPilas = true;
 
                 OnAnimation = true;
-               
+             
 
             }
+
             else
             {
                 if (OnAnimation)
                 {
-                    timelineCrossAir.Play();
                     OnAnimation = false;
                     timelineCanvas.Stop();
+                    timelineCrossAir.Play();
                 }
 
 
@@ -292,16 +288,17 @@ public class MouseLook : MonoBehaviour
                 llave.isLlave = false;
 
                 pilas.isOnPilas = false;
+                OnAnimation = false;
 
 
             }
-            */
-
         }
         else
         {
             print("NO HAY NADA");
-            Cursor.SetCursor(cursorNada, Vector2.zero, CursorMode.Auto);
+            
+            OnAnimation = false;
+
         }
 
 
