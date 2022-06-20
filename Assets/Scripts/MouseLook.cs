@@ -24,6 +24,7 @@ public class MouseLook : MonoBehaviour
     public ObjON linterna;
 
     public Llave llave;
+    public Llave llave1;
 
     public RecargaBat pilas;
 
@@ -125,6 +126,15 @@ public class MouseLook : MonoBehaviour
                 break;
                
             }
+            else if (hit.collider.CompareTag("llave1"))
+            {
+                timelineCanvas.Play();
+
+                llave1.isLlave = true;
+                OnAnimation = true;
+                break;
+
+            }
             else if (hit.collider.CompareTag("pilas"))
             {
                 timelineCanvas.Play();
@@ -158,6 +168,7 @@ public class MouseLook : MonoBehaviour
 
                 
                 llave.isLlave = false;
+                llave1.isLlave = false;
 
                 pilas.isOnPilas = false;
                 

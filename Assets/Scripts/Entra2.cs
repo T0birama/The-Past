@@ -9,6 +9,7 @@ public class Entra2 : MonoBehaviour
     public GameObject sombra;
     public GameObject luz;
     public GameObject otraluz;
+    public GameObject Tv;
     
     
 
@@ -29,5 +30,6 @@ public class Entra2 : MonoBehaviour
         luz.SetActive(false);
         otraluz.SetActive(false);
         gameObject.SetActive(false);
+        Tv.SetActive(true);
     }
 }
