@@ -17,7 +17,7 @@ public class Zoom : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             DOTween.To(() => fov, x => fov = x, 35, 1);
-            cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain= 1;
+            cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = 1;
             cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 2;
         }
         else if (Input.GetMouseButtonUp(1))
@@ -27,11 +27,11 @@ public class Zoom : MonoBehaviour
             cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 2;
         }
 
-        if(fov == 35)
+        if (fov == 35)
         {
             Lupita.SetActive(true);
         }
-        else if(fov < 60)
+        else if (fov < 60)
         {
             Lupita.SetActive(false);
         }
