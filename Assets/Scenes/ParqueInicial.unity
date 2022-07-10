@@ -9097,7 +9097,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8778135, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -16703,7 +16703,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7d4f3b87a36be3d45b5f8863c803acc4, type: 2}
+      objectReference: {fileID: 2100000, guid: ea4f174bff7e23e459e8487345639ecb, type: 2}
     - target: {fileID: -646481518695035523, guid: 53f9455add661e441b2e4a947564fecf,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16743,7 +16743,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7d4f3b87a36be3d45b5f8863c803acc4, type: 2}
+      objectReference: {fileID: 2100000, guid: ea4f174bff7e23e459e8487345639ecb, type: 2}
     - target: {fileID: 122608338434328296, guid: 53f9455add661e441b2e4a947564fecf,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -16838,7 +16838,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: ea4f174bff7e23e459e8487345639ecb, type: 2}
+      objectReference: {fileID: 2100000, guid: acd54a0b10016ad479a0f2793c1c4bd9, type: 2}
     - target: {fileID: 1099556530389837002, guid: 53f9455add661e441b2e4a947564fecf,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
