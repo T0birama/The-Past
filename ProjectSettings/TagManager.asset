@@ -16,6 +16,8 @@ TagManager:
   - linterna
   - llave
   - llave1
+  - pilas1
+  - pilas2
   layers:
   - Default
   - TransparentFX
