@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 755.37524, g: 397.44775, b: 257.7173, a: 1}
+  m_IndirectSpecularColor: {r: 756.0581, g: 397.83716, b: 257.8745, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10567,6 +10567,11 @@ PrefabInstance:
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7791443408913176156, guid: a5c9bb53e2596274b9da8ce716ed3748,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1588594026599ff48a9d4aa741acc4d5, type: 2}
     - target: {fileID: -7664728788398519507, guid: a5c9bb53e2596274b9da8ce716ed3748,
         type: 3}
       propertyPath: m_StaticShadowCaster
@@ -10627,6 +10632,11 @@ PrefabInstance:
       propertyPath: m_StaticShadowCaster
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7308718804694308083, guid: a5c9bb53e2596274b9da8ce716ed3748,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2f5360e8ffedc1d4e9a73bc25b953d3c, type: 2}
     - target: {fileID: -7271449666460269675, guid: a5c9bb53e2596274b9da8ce716ed3748,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -10912,6 +10922,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: -3097340288434626328, guid: a5c9bb53e2596274b9da8ce716ed3748,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8e6efb252627bbf43ac4c9697729b173, type: 2}
     - target: {fileID: -2947538861075970057, guid: a5c9bb53e2596274b9da8ce716ed3748,
         type: 3}
       propertyPath: m_StaticShadowCaster
@@ -11401,7 +11416,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 4626a5c5ad769674bb1021568492970d, type: 2}
+      objectReference: {fileID: 2100000, guid: 8e6efb252627bbf43ac4c9697729b173, type: 2}
     - target: {fileID: 3019315682794032705, guid: a5c9bb53e2596274b9da8ce716ed3748,
         type: 3}
       propertyPath: m_StaticShadowCaster
@@ -11482,6 +11497,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 4626a5c5ad769674bb1021568492970d, type: 2}
+    - target: {fileID: 4640121139722577524, guid: a5c9bb53e2596274b9da8ce716ed3748,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1588594026599ff48a9d4aa741acc4d5, type: 2}
     - target: {fileID: 4876285997155681295, guid: a5c9bb53e2596274b9da8ce716ed3748,
         type: 3}
       propertyPath: m_StaticShadowCaster
