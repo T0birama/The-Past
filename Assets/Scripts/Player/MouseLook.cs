@@ -32,7 +32,7 @@ public class MouseLook : MonoBehaviour
 
     public bool OnAnimation;
 
-    public float distance = 20;
+    public float distance = 10;
     public float mouseSensivility = 200f;
 
     public Transform playerBody;

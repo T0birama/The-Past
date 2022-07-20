@@ -21,7 +21,7 @@ public class Spawn : MonoBehaviour
     {
         if (ison)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKey(KeyCode.E))
             {
                 StartCoroutine(Faded());
                 fadedBlack.Play();
@@ -34,7 +34,7 @@ public class Spawn : MonoBehaviour
         playerTransform.transform.position = Spawner.transform.position;
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
         {
