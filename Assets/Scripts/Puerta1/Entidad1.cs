@@ -25,5 +25,10 @@ public class Entidad1 : MonoBehaviour
         }
 
         puerta1Gift.SetActive(todosEscondidos);
+
+        if (puerta1Gift.activeSelf)
+        {
+            this.enabled = false;
+        }
     }
 }

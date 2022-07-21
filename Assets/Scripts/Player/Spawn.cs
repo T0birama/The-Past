@@ -30,7 +30,7 @@ public class Spawn : MonoBehaviour
     }
     IEnumerator Faded()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.4f);
         playerTransform.transform.position = Spawner.transform.position;
     }
 
