@@ -9,7 +9,7 @@ public class Locura : MonoBehaviour
 {
     public Slider slider;
     
-    public float cordura = 0f;
+    public float cordura = 1f;
     public Volume volume;
     
     // Start is called before the first frame update
@@ -30,7 +30,7 @@ public class Locura : MonoBehaviour
 
         volume.weight = Mathf.Clamp(volume.weight,0,0.6f);
 
-        cordura +=0.01f * Time.deltaTime; 
+        cordura -=0.01f * Time.deltaTime; 
         volume.weight += 0.01f * Time.deltaTime;
 
     }

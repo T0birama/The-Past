@@ -20,7 +20,7 @@ public class Item : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ConsumibleMedicamento.SetActive(false);
-                loc.cordura = 0f ;
+                loc.cordura = 1f ;
                 loc.volume.weight = 0f ;
                 TextoConsumirMedicamento.SetActive(false);
                 imageMedic.SetActive(false);

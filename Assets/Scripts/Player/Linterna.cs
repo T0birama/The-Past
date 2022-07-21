@@ -41,7 +41,7 @@ public class Linterna : MonoBehaviour
         {
             lu.IntensidadDown();
             loc.volume.weight -= 0.1f * Time.deltaTime;
-            loc.cordura -= 0.1f * Time.deltaTime;
+            loc.cordura += 0.1f * Time.deltaTime;
         }
         
     }

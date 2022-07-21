@@ -6,6 +6,7 @@ public class niñaCorriendo : MonoBehaviour
 {
     public GameObject niña;
     public PlayableDirector TimelineNiña;
+    public Locura loc;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,8 @@ public class niñaCorriendo : MonoBehaviour
             niña.SetActive(true);
             TimelineNiña.Play();
             StartCoroutine(deniña());
+            loc.cordura -= 0.1f;
+            loc.volume.weight += 0.1f;
         }
     }
 

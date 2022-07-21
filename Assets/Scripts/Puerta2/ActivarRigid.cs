@@ -25,7 +25,7 @@ public class ActivarRigid : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             rb.isKinematic = false;
-            locura.cordura += 0.1f ;
+            locura.cordura -= 0.1f ;
             locura.volume.weight += 0.1f ;
             gameObject.SetActive(false);
         }

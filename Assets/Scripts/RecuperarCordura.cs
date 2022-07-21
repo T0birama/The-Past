@@ -21,9 +21,9 @@ public class RecuperarCordura : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.CompareTag("Player") && locura.cordura > 0 && locura.volume.weight > 0  )
+        if (other.CompareTag("Player") && locura.cordura < 1 && locura.volume.weight > 0)
         {
-            locura.cordura -=0.05f * Time.deltaTime;
+            locura.cordura +=0.05f * Time.deltaTime;
             locura.volume.weight -=0.05f * Time.deltaTime;
         }
     }
