@@ -30,7 +30,7 @@ public class MouseLook : MonoBehaviour
     public RecargaBat pilas1;
     public RecargaBat pilas2;
 
-    public bool OnAnimation;
+    
 
     public float distance = 10;
     public float mouseSensivility = 200f;
@@ -66,7 +66,7 @@ public class MouseLook : MonoBehaviour
                 
                 mano.SetActive(true);
                 ampolleta.isOn = true;
-                OnAnimation=true;
+                
                 break;
                 
             }
@@ -76,7 +76,7 @@ public class MouseLook : MonoBehaviour
                 
                 mano.SetActive(true);
                 ampolleta1.isOn = true;
-                OnAnimation = true;
+                
                 break;
                
             }
@@ -85,7 +85,7 @@ public class MouseLook : MonoBehaviour
             {
                 
                 vampolleta.isOn = true;
-                OnAnimation = true;
+                
                 mano.SetActive(true);
                 break;
                
@@ -96,7 +96,7 @@ public class MouseLook : MonoBehaviour
             {
                 
                 vampolleta1.isOn = true;
-                OnAnimation = true;
+                
                 mano.SetActive(true);
 
                 break;
@@ -106,7 +106,7 @@ public class MouseLook : MonoBehaviour
             {
                 
                 item.IsOnMedi = true;
-                OnAnimation = true;
+                
                 mano.SetActive(true);
 
                 break;
@@ -117,7 +117,7 @@ public class MouseLook : MonoBehaviour
                
                 mano.SetActive(true);
                 linterna.isOnlinte = true;
-                OnAnimation = true;
+                
                 break;
                
             }
@@ -126,7 +126,7 @@ public class MouseLook : MonoBehaviour
                 
                 mano.SetActive(true);
                 llave.isLlave = true;
-                OnAnimation = true;
+                
                 break;
                
             }
@@ -135,7 +135,7 @@ public class MouseLook : MonoBehaviour
                 
                 mano.SetActive(true);
                 llave1.isLlave = true;
-                OnAnimation = true;
+                
                 break;
 
             }
@@ -144,7 +144,7 @@ public class MouseLook : MonoBehaviour
                 
                 pilas.isOnPilas = true;
                 mano.SetActive(true);
-                OnAnimation = true;
+                
                 break;
                
             }
@@ -154,7 +154,7 @@ public class MouseLook : MonoBehaviour
                 
                 pilas1.isOnPilas = true;
                 mano.SetActive(true);
-                OnAnimation = true;
+                
                 break;
 
             }
@@ -163,7 +163,7 @@ public class MouseLook : MonoBehaviour
                 
                 pilas2.isOnPilas = true;
                 mano.SetActive(true);
-                OnAnimation = true;
+                
                 break;
 
             }
