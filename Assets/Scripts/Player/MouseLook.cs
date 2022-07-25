@@ -5,10 +5,10 @@ using UnityEngine.Playables;
 
 public class MouseLook : MonoBehaviour
 {
-    public Texture2D cursorActivo, cursorNada;
+    public GameObject mano;
 
-    public PlayableDirector timelineCanvas;
-    public PlayableDirector timelineCrossAir;
+    
+    
 
     public iAmpolleta ampolleta;
     public iAmpolleta ampolleta1;
@@ -63,8 +63,8 @@ public class MouseLook : MonoBehaviour
             
             if (hit.collider.CompareTag("ampolleta"))
             {
-                timelineCanvas.Play();
-            
+                
+                mano.SetActive(true);
                 ampolleta.isOn = true;
                 OnAnimation=true;
                 break;
@@ -73,8 +73,8 @@ public class MouseLook : MonoBehaviour
 
             else if (hit.collider.CompareTag("ampolleta1"))
             {
-                timelineCanvas.Play();
-               
+                
+                mano.SetActive(true);
                 ampolleta1.isOn = true;
                 OnAnimation = true;
                 break;
@@ -83,10 +83,10 @@ public class MouseLook : MonoBehaviour
 
             else if(hit.collider.CompareTag("ampolletavacia"))
             {
-                timelineCanvas.Play();
+                
                 vampolleta.isOn = true;
                 OnAnimation = true;
-                
+                mano.SetActive(true);
                 break;
                
 
@@ -94,26 +94,28 @@ public class MouseLook : MonoBehaviour
 
             else if(hit.collider.CompareTag("ampolletavacia1"))
             {
-                timelineCanvas.Play();
+                
                 vampolleta1.isOn = true;
                 OnAnimation = true;
-                
+                mano.SetActive(true);
+
                 break;
                
             }
             else if (hit.collider.CompareTag("medicamento"))
             {
-                timelineCanvas.Play();
+                
                 item.IsOnMedi = true;
                 OnAnimation = true;
-                
+                mano.SetActive(true);
+
                 break;
               
             }
             else if (hit.collider.CompareTag("linterna"))
             {
-                timelineCanvas.Play();
-                
+               
+                mano.SetActive(true);
                 linterna.isOnlinte = true;
                 OnAnimation = true;
                 break;
@@ -121,8 +123,8 @@ public class MouseLook : MonoBehaviour
             }
             else if (hit.collider.CompareTag("llave")) 
             {
-                timelineCanvas.Play();
                 
+                mano.SetActive(true);
                 llave.isLlave = true;
                 OnAnimation = true;
                 break;
@@ -130,8 +132,8 @@ public class MouseLook : MonoBehaviour
             }
             else if (hit.collider.CompareTag("llave1"))
             {
-                timelineCanvas.Play();
-
+                
+                mano.SetActive(true);
                 llave1.isLlave = true;
                 OnAnimation = true;
                 break;
@@ -139,9 +141,9 @@ public class MouseLook : MonoBehaviour
             }
             else if (hit.collider.CompareTag("pilas"))
             {
-                timelineCanvas.Play();
+                
                 pilas.isOnPilas = true;
-               
+                mano.SetActive(true);
                 OnAnimation = true;
                 break;
                
@@ -149,18 +151,18 @@ public class MouseLook : MonoBehaviour
 
             else if (hit.collider.CompareTag("pilas1"))
             {
-                timelineCanvas.Play();
+                
                 pilas1.isOnPilas = true;
-
+                mano.SetActive(true);
                 OnAnimation = true;
                 break;
 
             }
             else if (hit.collider.CompareTag("pilas2"))
             {
-                timelineCanvas.Play();
+                
                 pilas2.isOnPilas = true;
-
+                mano.SetActive(true);
                 OnAnimation = true;
                 break;
 
@@ -168,14 +170,8 @@ public class MouseLook : MonoBehaviour
 
             else
             {
-                if (OnAnimation)
-                {
-                    timelineCrossAir.Play();
-                    OnAnimation = false;
-                    timelineCanvas.Stop();
-                }
-                
 
+                mano.SetActive(false);
                 vampolleta1.isOn = false;
                 vampolleta.isOn = false;
                 ampolleta.isOn = false;
@@ -212,129 +208,8 @@ public class MouseLook : MonoBehaviour
     }
 
 
-    public LayerMask layerMask;
-    void AlternativaRaycast()
-    {
-        Ray ray = new Ray(transform.position , transform.forward);
-        RaycastHit hit;
+    
+       
 
-        if(Physics.Raycast(ray,out hit, distance))
-        {
-
-            if (hit.collider.CompareTag("ampolleta"))
-            {
-                timelineCanvas.Play();
-
-                ampolleta.isOn = true;
-                OnAnimation = true;
-              
-
-            }
-
-            else if (hit.collider.CompareTag("ampolleta1"))
-            {
-                timelineCanvas.Play();
-
-                ampolleta1.isOn = true;
-                OnAnimation = true;
-                
-            }
-
-            else if (hit.collider.CompareTag("ampolletavacia"))
-            {
-                timelineCanvas.Play();
-                vampolleta.isOn = true;
-                OnAnimation = true;
-
-              
-
-
-            }
-
-            else if (hit.collider.CompareTag("ampolletavacia1"))
-            {
-                timelineCanvas.Play();
-                vampolleta1.isOn = true;
-                OnAnimation = true;
-
-                
-
-            }
-            else if (hit.collider.CompareTag("medicamento"))
-            {
-                timelineCanvas.Play();
-                item.IsOnMedi = true;
-                OnAnimation = true;
-
-            
-
-            }
-            else if (hit.collider.CompareTag("linterna"))
-            {
-                timelineCanvas.Play();
-
-                linterna.isOnlinte = true;
-                OnAnimation = true;
-             
-
-            }
-            else if (hit.collider.CompareTag("llave"))
-            {
-                timelineCanvas.Play();
-
-                llave.isLlave = true;
-                OnAnimation = true;
-              
-
-            }
-            else if (hit.collider.CompareTag("pilas"))
-            {
-                timelineCanvas.Play();
-                pilas.isOnPilas = true;
-
-                OnAnimation = true;
-             
-
-            }
-
-            else
-            {
-                if (OnAnimation)
-                {
-                    OnAnimation = false;
-                    timelineCanvas.Stop();
-                    timelineCrossAir.Play();
-                }
-
-
-                vampolleta1.isOn = false;
-                vampolleta.isOn = false;
-                ampolleta.isOn = false;
-                ampolleta1.isOn = false;
-
-                item.IsOnMedi = false;
-
-
-
-                linterna.isOnlinte = false;
-
-
-                llave.isLlave = false;
-
-                pilas.isOnPilas = false;
-                OnAnimation = false;
-
-
-            }
-        }
-        else
-        {
-            print("NO HAY NADA");
-            
-            OnAnimation = false;
-
-        }
-
-
-    }
+    
 }
