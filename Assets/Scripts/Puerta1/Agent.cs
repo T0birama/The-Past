@@ -70,4 +70,6 @@ public class Agent : MonoBehaviour
             nav.SetDestination(player.transform.position);
         }
     }
+
+    
 }

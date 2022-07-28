@@ -5,6 +5,9 @@ using UnityEngine;
 public class PrenderAmbiente : MonoBehaviour
 {
     public GameObject ambiente;
+    public AudioSource audioAmbiente;
+    public AudioSource audioPuerta;
+
     bool isON;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +23,8 @@ public class PrenderAmbiente : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 ambiente.SetActive(true);
+                audioAmbiente.mute = false;
+                audioPuerta.mute = true;
             }
         }
     }

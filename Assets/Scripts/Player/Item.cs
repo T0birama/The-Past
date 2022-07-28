@@ -18,7 +18,7 @@ public class Item : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 ConsumibleMedicamento.SetActive(false);
-                
+                gameObject.SetActive(false);
                 imageMedic.SetActive(false); 
                 
                 inventory.medicamentoCount += 1;

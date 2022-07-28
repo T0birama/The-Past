@@ -18,6 +18,7 @@ TagManager:
   - llave1
   - pilas1
   - pilas2
+  - medicamento1
   layers:
   - Default
   - TransparentFX

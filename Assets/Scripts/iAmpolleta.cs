@@ -45,24 +45,6 @@ public class iAmpolleta : MonoBehaviour
         }
     }
 
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Mira"))
-        {
-            isOn = true;
-            CanvasPuedoAgarrar.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Mira"))
-        {
-            isOn = false;
-            CanvasPuedoAgarrar.SetActive(false);
-        }
-    }*/
-
     void Apagarobj()
     {
         O1.SetActive(false);

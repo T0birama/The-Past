@@ -6,11 +6,14 @@ public class ActivarEntidad1 : MonoBehaviour
 {
     public GameObject OtraEntidad;
     public GameObject timer;
+    
+    public AudioSource empezó;
     public TimerEntidades Tiempo;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
@@ -19,14 +22,14 @@ public class ActivarEntidad1 : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             gameObject.SetActive(false);
             OtraEntidad.SetActive(true);
             timer.SetActive(true);
-            
+            empezó.enabled = true;
             Tiempo.enabled = true;
             Tiempo.tiempoAMostrarEnSegundos = Tiempo.TiempoInicial;
             Tiempo.ActualizarReloj(Tiempo.TiempoInicial);

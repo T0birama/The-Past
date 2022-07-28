@@ -12,6 +12,7 @@ public class Entidad1 : MonoBehaviour
     public PlayableDirector timeline2;
     public PlayableDirector timeline3;
     public PlayableDirector timeline4;
+    
 
 
     // Start is called before the first frame update
@@ -42,6 +43,7 @@ public class Entidad1 : MonoBehaviour
         if (entidad1[0].activeSelf)
         {
             timeline0.Play();
+           
         }
         else
         {

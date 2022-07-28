@@ -20,6 +20,7 @@ public class MouseLook : MonoBehaviour
     public Vampolleta vampolleta2;
     
     public Item item;
+    public Item item1;
 
     public ObjON linterna;
 
@@ -112,6 +113,16 @@ public class MouseLook : MonoBehaviour
                 break;
               
             }
+            else if (hit.collider.CompareTag("medicamento1"))
+            {
+
+                item1.IsOnMedi = true;
+
+                mano.SetActive(true);
+
+                break;
+
+            }
             else if (hit.collider.CompareTag("linterna"))
             {
                
@@ -178,7 +189,7 @@ public class MouseLook : MonoBehaviour
                 ampolleta1.isOn = false;
 
                 item.IsOnMedi = false;
-                
+                item1.IsOnMedi = false;
 
                 
                 linterna.isOnlinte = false;
