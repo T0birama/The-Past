@@ -26,8 +26,9 @@ public class niñaCorriendo : MonoBehaviour
             niña.SetActive(true);
             TimelineNiña.Play();
             StartCoroutine(deniña());
-            loc.cordura -= 0.1f;
-            loc.volume.weight += 0.1f;
+            loc.cordura -= 0.05f;
+            loc.volume.weight += 0.01f;
+            gameObject.SetActive(false);
         }
     }
 
