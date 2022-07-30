@@ -19,6 +19,8 @@ TagManager:
   - pilas1
   - pilas2
   - medicamento1
+  - ampolleta2
+  - ampolletavacia2
   layers:
   - Default
   - TransparentFX

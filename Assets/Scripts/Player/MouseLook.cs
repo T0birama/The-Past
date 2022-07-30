@@ -81,6 +81,15 @@ public class MouseLook : MonoBehaviour
                 break;
                
             }
+            else if (hit.collider.CompareTag("ampolleta2"))
+            {
+
+                mano.SetActive(true);
+                ampolleta2.isOn = true;
+
+                break;
+
+            }
 
             else if(hit.collider.CompareTag("ampolletavacia"))
             {
@@ -102,6 +111,14 @@ public class MouseLook : MonoBehaviour
 
                 break;
                
+            }
+            else if (hit.collider.CompareTag("ampolletavacia2"))
+            {
+                vampolleta2.isOn = true;
+
+                mano.SetActive(true);
+
+                break;
             }
             else if (hit.collider.CompareTag("medicamento"))
             {
@@ -187,6 +204,8 @@ public class MouseLook : MonoBehaviour
                 vampolleta.isOn = false;
                 ampolleta.isOn = false;
                 ampolleta1.isOn = false;
+                ampolleta2.isOn = false;
+                vampolleta2.isOn = false;
 
                 item.IsOnMedi = false;
                 item1.IsOnMedi = false;
