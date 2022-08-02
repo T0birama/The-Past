@@ -5,8 +5,8 @@ using UnityEngine;
 public class Apagarambiente : MonoBehaviour
 {
     public GameObject ambiente;
-    public AudioSource audioAmbiente;
-    public AudioSource audioPuerta;
+    public GameObject audioAmbiente;
+    public GameObject audioPuerta;
     bool isON;
     // Start is called before the first frame update
     void Start()
@@ -22,8 +22,8 @@ public class Apagarambiente : MonoBehaviour
             if (Input.GetKey(KeyCode.E))
             {
                 ambiente.SetActive(false);
-                audioAmbiente.mute = true;
-                audioPuerta.mute = false;
+                audioAmbiente.SetActive(false);
+                audioPuerta.SetActive(true);
             }
         }
     }

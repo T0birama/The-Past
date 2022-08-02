@@ -7,7 +7,7 @@ public class ActivarEntidad1 : MonoBehaviour
     public GameObject OtraEntidad;
     public GameObject timer;
     
-    public AudioSource empezó;
+    public GameObject empezó;
     public TimerEntidades Tiempo;
     
     // Start is called before the first frame update
@@ -29,7 +29,7 @@ public class ActivarEntidad1 : MonoBehaviour
             gameObject.SetActive(false);
             OtraEntidad.SetActive(true);
             timer.SetActive(true);
-            empezó.enabled = true;
+            empezó.SetActive(true);
             Tiempo.enabled = true;
             Tiempo.tiempoAMostrarEnSegundos = Tiempo.TiempoInicial;
             Tiempo.ActualizarReloj(Tiempo.TiempoInicial);

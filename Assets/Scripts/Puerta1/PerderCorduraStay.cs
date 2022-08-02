@@ -6,7 +6,7 @@ public class PerderCorduraStay : MonoBehaviour
 {
 
     public Locura loc;
-    public AudioSource stayAudio;
+    public GameObject stayAudio;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +25,7 @@ public class PerderCorduraStay : MonoBehaviour
         {
             loc.cordura = 0.8f;
             loc.volume.weight = 0.2f;
-            stayAudio.enabled = true;
+            stayAudio.SetActive(true);
             StartCoroutine(staynot());
         }
     }

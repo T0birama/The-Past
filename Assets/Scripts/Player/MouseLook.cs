@@ -46,15 +46,9 @@ public class MouseLook : MonoBehaviour
         
     }
 
-
-
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-
-        
-        
         RaycastHit[] hits= Physics.RaycastAll(transform.position, transform.forward, distance);
         Debug.DrawRay(transform.position, transform.forward * distance, Color.red);
 
