@@ -52,7 +52,7 @@ public class Inventory : MonoBehaviour
             mouse.mouseSensivility = 200;
             TimelineApagando.Play();
             TimelinePrendio.Stop();
-            
+            Cursor.visible = false;
             Cursor.lockState = CursorLockMode.Locked;
 
         }

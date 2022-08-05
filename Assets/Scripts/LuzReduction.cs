@@ -30,4 +30,6 @@ public class LuzReduction : MonoBehaviour
         linterna.intensity -= reduction * Time.deltaTime;
     }
 
+    
+
 }

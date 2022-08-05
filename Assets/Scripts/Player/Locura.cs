@@ -30,8 +30,14 @@ public class Locura : MonoBehaviour
 
         volume.weight = Mathf.Clamp(volume.weight,0,0.6f);
 
-        cordura -=0.01f * Time.deltaTime; 
-        volume.weight += 0.01f * Time.deltaTime;
+        perderCordura();
+    } 
 
+    public void perderCordura()
+    {
+        cordura -= 0.01f * Time.deltaTime;
+        volume.weight += 0.01f * Time.deltaTime;
     }
+
+    
 }

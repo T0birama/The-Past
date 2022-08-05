@@ -50,6 +50,7 @@ public class MatarPlayer : MonoBehaviour
         FADED.Play();
         StartCoroutine(MuerteFaded());
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         mouse.mouseSensivility = 200;
         botonesSaliendo.Stop();
         timelineMuerte.Stop();
@@ -57,15 +58,7 @@ public class MatarPlayer : MonoBehaviour
         botonesMuerte.SetActive(false);
     }
 
-    public void salirPaMenu()
-    {
-        FADED.Play();
-        StartCoroutine(salir());
-    }
+    
 
-    IEnumerator salir()
-    {
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(0);
-    }
+    
 }

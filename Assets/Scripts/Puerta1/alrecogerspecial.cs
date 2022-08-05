@@ -6,7 +6,7 @@ public class alrecogerspecial : MonoBehaviour
 {
     public GameObject luzRoja;
     public GameObject LuzVerde;
-
+    
 
 
     private void OnTriggerStay(Collider other)

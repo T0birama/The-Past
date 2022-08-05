@@ -9,6 +9,9 @@ public class ActivarEntidad1 : MonoBehaviour
     
     public GameObject empezó;
     public TimerEntidades Tiempo;
+
+    public GameObject busca;
+
     
     // Start is called before the first frame update
     void Start()
@@ -33,7 +36,7 @@ public class ActivarEntidad1 : MonoBehaviour
             Tiempo.enabled = true;
             Tiempo.tiempoAMostrarEnSegundos = Tiempo.TiempoInicial;
             Tiempo.ActualizarReloj(Tiempo.TiempoInicial);
-            
+            busca.SetActive(true);
         }
     }
 }
