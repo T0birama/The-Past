@@ -7291,7 +7291,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181311057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8be4b397c1a029c40be765151a5e7e2a, type: 3}
   m_Name: 
@@ -14317,9 +14317,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd90736563b925a4ca943e2f26e40d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lupita: {fileID: 11060422}
   loc: {fileID: 181311058}
   cameraPJ: {fileID: 347861632}
+  fov: 60
 --- !u!114 &347861631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14333,20 +14333,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mano: {fileID: 1297035051}
-  ampolleta: {fileID: 0}
-  ampolleta1: {fileID: 0}
-  ampolleta2: {fileID: 0}
-  vampolleta: {fileID: 0}
-  vampolleta1: {fileID: 0}
-  vampolleta2: {fileID: 0}
-  item: {fileID: 0}
-  item1: {fileID: 0}
-  linterna: {fileID: 0}
-  llave: {fileID: 0}
-  llave1: {fileID: 0}
-  pilas: {fileID: 911166186}
-  pilas1: {fileID: 622103138}
-  pilas2: {fileID: 0}
   distance: 3
   mouseSensivility: 200
   playerBody: {fileID: 181311067}

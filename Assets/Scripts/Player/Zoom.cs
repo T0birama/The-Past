@@ -6,11 +6,10 @@ using DG.Tweening;
 
 public class Zoom : MonoBehaviour
 {
-    public GameObject Lupita;
     public Locura loc;
     public CinemachineVirtualCamera cameraPJ;
 
-    private float fov = 60;
+    public float fov = 60;
 
     private void Update()
     {
@@ -41,14 +40,6 @@ public class Zoom : MonoBehaviour
 
         cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = Mathf.Clamp(cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain, 0 , 2);
 
-        if (fov == 35)
-        {
-            Lupita.SetActive(true);
-        }
-        else if (fov < 60)
-        {
-            Lupita.SetActive(false);
-        }
 
         cameraPJ.m_Lens.FieldOfView = fov;
     }
