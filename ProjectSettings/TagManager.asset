@@ -21,6 +21,7 @@ TagManager:
   - medicamento1
   - ampolleta2
   - ampolletavacia2
+  - Puerta2
   layers:
   - Default
   - TransparentFX

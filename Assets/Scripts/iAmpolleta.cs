@@ -35,7 +35,7 @@ public class iAmpolleta : MonoBehaviour
                 Collider1.SetActive(true);
                 CanvasImageObjeto.SetActive(true);
 
-                inventory.TimelineApagando.Play();
+                //inventory.TimelineApagando.Play();
 
 
                 Apagarobj();

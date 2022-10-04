@@ -6,10 +6,10 @@ using UnityEngine.Playables;
 public class ObjON : MonoBehaviour
 {
 
-    public GameObject LinternaImage;
+    //public GameObject LinternaImage;
     public GameObject LinternaDeSuelo;
     public GameObject LinternaDePlayer;
-    public Inventory inventory;
+    //public Inventory inventory;
     public GameObject TextLinternaPuedo;
 
     public bool isOnlinte;
@@ -26,11 +26,11 @@ public class ObjON : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                LinternaImage.SetActive(true);
+                //LinternaImage.SetActive(true);
                 LinternaDePlayer.SetActive(true);
                 LinternaDeSuelo.SetActive(false);
                 TextLinternaPuedo.SetActive(false);
-                inventory.TimelineApagando.Play();
+                //inventory.TimelineApagando.Play();
             }
         }
     }

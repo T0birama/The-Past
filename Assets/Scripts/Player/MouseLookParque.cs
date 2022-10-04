@@ -6,7 +6,7 @@ using UnityEngine.Playables;
 public class MouseLookParque : MonoBehaviour
 {
     public Texture2D cursorActivo, cursorNada;
-    private new Transform Camara;
+    private Transform Camara;
 
     public PlayableDirector timelineCanvas;
     public PlayableDirector timelineCrossAir;
@@ -20,7 +20,7 @@ public class MouseLookParque : MonoBehaviour
 
     public Transform playerBody;
 
-    float xRotation = 0f;
+    //float xRotation = 0f;
     // Start is called before the first frame update
     void Start()
     {

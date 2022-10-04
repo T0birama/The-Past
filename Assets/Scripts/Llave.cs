@@ -26,7 +26,7 @@ public class Llave : MonoBehaviour
                 TextoPuedoAgarrar.SetActive(false);
                 PuertaCollider.SetActive(true);
                 ColliderNecesitasLlave.SetActive(false);
-                inventory.TimelineApagando.Play();
+                //inventory.TimelineApagando.Play();
 
             }
         }

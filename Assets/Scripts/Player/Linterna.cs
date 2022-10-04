@@ -39,9 +39,9 @@ public class Linterna : MonoBehaviour
 
         if(Lantern.activeSelf == true && lu.linterna.intensity > 0)
         {
-            lu.IntensidadDown();
-            loc.volume.weight -= 0.1f * Time.deltaTime;
-            loc.cordura += 0.1f * Time.deltaTime;
+           //lu.IntensidadDown();
+           loc.volume.weight -= 0.1f * Time.deltaTime;
+           loc.cordura += 0.1f * Time.deltaTime;
         }
         
     }
