@@ -20185,7 +20185,6 @@ GameObject:
   - component: {fileID: 384126514}
   - component: {fileID: 384126513}
   - component: {fileID: 384126517}
-  - component: {fileID: 384126518}
   m_Layer: 5
   m_Name: Canvas (1)
   m_TagString: Untagged
@@ -20308,28 +20307,15 @@ PlayableDirector:
   m_Enabled: 1
   serializedVersion: 3
   m_PlayableAsset: {fileID: 11400000, guid: 39e4db7d54dbbb04db02ead9f9a122e4, type: 2}
-  m_InitialState: 0
+  m_InitialState: 1
   m_WrapMode: 0
   m_DirectorUpdateMode: 1
   m_InitialTime: 0
   m_SceneBindings:
-  - key: {fileID: 7637466785991524591, guid: 39e4db7d54dbbb04db02ead9f9a122e4, type: 2}
-    value: {fileID: 0}
+  - key: {fileID: -4134272860941299115, guid: 39e4db7d54dbbb04db02ead9f9a122e4, type: 2}
+    value: {fileID: 739810645}
   m_ExposedReferences:
     m_References: []
---- !u!114 &384126518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 384126512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b1a3b586a4dc4748bf897e3487edbdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tuto: {fileID: 1318094027}
 --- !u!1 &384555509
 GameObject:
   m_ObjectHideFlags: 0
