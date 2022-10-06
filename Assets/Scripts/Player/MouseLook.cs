@@ -16,6 +16,11 @@ public class MouseLook : MonoBehaviour
     public ObjON linternaObj;
     public Item medicamentoObj;
 
+    [Header("Puertas")]
+
+    [Header("Otras cosas")]
+    public TimelinePlay timelineCosa;
+
     float xRotation = 0f;
     // Start is called before the first frame update
     void Start()
@@ -27,8 +32,8 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        RaycastHit[] hits = Physics.RaycastAll(transform.position, transform.forward, distance);
-        RaycastHit[] hits2 = Physics.RaycastAll(transform.position, transform.forward, distance2);
+        RaycastHit[] hits = Physics.RaycastAll(transform.position , transform.forward, distance);
+        RaycastHit[] hits2 = Physics.RaycastAll(transform.position , transform.forward, distance2);
         Debug.DrawRay(transform.position, transform.forward * distance, Color.red);
 
         foreach (RaycastHit hit2 in hits2)
@@ -42,6 +47,11 @@ public class MouseLook : MonoBehaviour
                 linternaObj.isOnlinte = false;
                 medicamentoObj.textoRecogerMedi.SetActive(false);
                 medicamentoObj.IsOnMedi = false;
+
+            }
+            else if (hit2.collider.CompareTag("Fantasmita"))
+            {
+                hit2.collider.gameObject.SetActive(false);
             }
         }
         foreach (RaycastHit hit in hits)
@@ -58,7 +68,11 @@ public class MouseLook : MonoBehaviour
                 linternaObj.isOnlinte = true;
                 linternaObj.TextLinternaPuedo.SetActive(true);
             }
-
+            else if (hit.collider.CompareTag("Cosa"))
+            {
+                hit.collider.gameObject.SetActive(false);
+                timelineCosa.timelineplay();
+            }
             else
             {
                 medicamentoObj.textoRecogerMedi.SetActive(false);
@@ -70,6 +84,7 @@ public class MouseLook : MonoBehaviour
             }
 
         }
+
 
         
 

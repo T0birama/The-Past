@@ -10,7 +10,9 @@ public class Entra : MonoBehaviour
     public Locura locura;
     public GameObject luces;
     public GameObject audioA;
+    public GameObject fantasma;
    
+    public SiSeApagaEstePrendoEste si;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,10 +41,12 @@ public class Entra : MonoBehaviour
 
     IEnumerator lucesApagadas()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
         luces.SetActive(false);
         audioA.SetActive(false);
         gameObject.SetActive(false);
+        fantasma.SetActive(true);
+        si.prendido = true;
     }
 
 }
