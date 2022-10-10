@@ -7,6 +7,7 @@ using UnityEngine.Rendering;
 public class Entra : MonoBehaviour
 {
     public PlayableDirector Timeline;
+    public PlayableDirector TimelineVamos;
     public Locura locura;
     public GameObject luces;
     public GameObject audioA;
@@ -29,7 +30,7 @@ public class Entra : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            
+            TimelineVamos.Play();
             Timeline.Play();
             locura.cordura -= 0.1f ;
             

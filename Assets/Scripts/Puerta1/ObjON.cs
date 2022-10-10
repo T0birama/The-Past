@@ -12,6 +12,8 @@ public class ObjON : MonoBehaviour
     //public Inventory inventory;
     public GameObject TextLinternaPuedo;
 
+    
+
     public bool isOnlinte;
     // Start is called before the first frame update
     void Start()
@@ -31,9 +33,13 @@ public class ObjON : MonoBehaviour
                 LinternaDeSuelo.SetActive(false);
                 TextLinternaPuedo.SetActive(false);
                 //inventory.TimelineApagando.Play();
+
+                
             }
         }
     }
+
+    
 
    
 }
