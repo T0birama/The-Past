@@ -5,85 +5,36 @@ using UnityEngine.Playables;
 
 public class Entidad1 : MonoBehaviour
 {
-    public GameObject puerta1Gift;
-    public GameObject[] entidad1;
-    public PlayableDirector timeline0;
-    public PlayableDirector timeline1;
-    public PlayableDirector timeline2;
-    public PlayableDirector timeline3;
-    public PlayableDirector timeline4;
-    
-
+    public GameObject esteKid;
+    public GameObject otroKid;
+    public bool PuedoAgarrar;
+    public GameObject estasLuces;
+    public GameObject otrasLuces;
+    public PlayableDirector TimelinePillado;
+    public GameObject navmesh;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        PuedoAgarrar = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        bool todosEscondidos = true;
-        foreach (GameObject g in entidad1)
-        {
-            if (g.activeSelf)
+       if(PuedoAgarrar == true)
+       {
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                todosEscondidos = false;
+                esteKid.SetActive(false);
+                otroKid.SetActive(true);
+                estasLuces.SetActive(false);
+                otrasLuces.SetActive(true);
+
+                TimelinePillado.Play();
+                navmesh.SetActive(true);
             }
-        }
-
-        puerta1Gift.SetActive(todosEscondidos);
-
-        if (puerta1Gift.activeSelf)
-        {
-            this.enabled = false;
-        }
-
-        if (entidad1[0].activeSelf)
-        {
-            timeline0.Play();
-           
-        }
-        else
-        {
-            timeline0.Stop();
-        }
-
-        if (entidad1[1].activeSelf)
-        {
-            timeline1.Play();
-        }
-        else
-        {
-            timeline1.Stop();
-        }
-
-        if (entidad1[2].activeSelf)
-        {
-            timeline2.Play();
-        }
-        else
-        {
-            timeline2.Stop();
-        }
-
-        if (entidad1[3].activeSelf)
-        {
-            timeline3.Play();
-        }
-        else
-        {
-            timeline3.Stop();
-        }
-        if (entidad1[4].activeSelf)
-        {
-            timeline4.Play();
-        }
-        else
-        {
-            timeline4.Stop();
-        }
+       }
 
 
 

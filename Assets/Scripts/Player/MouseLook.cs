@@ -22,6 +22,9 @@ public class MouseLook : MonoBehaviour
 
     [Header("Otras cosas")]
     public TimelinePlay timelineCosa;
+    public Entidad1 niño1;
+    public Entidad1 niño2;
+    
 
     float xRotation = 0f;
     // Start is called before the first frame update
@@ -39,8 +42,6 @@ public class MouseLook : MonoBehaviour
 
         if (Physics.Raycast(transform.position, transform.forward, out hit, distance))
         {
-            
-            
             if (hit.collider.CompareTag("medicamento"))
             {
 
@@ -50,13 +51,26 @@ public class MouseLook : MonoBehaviour
                 medicamentoObj.textoRecogerMedi.SetActive(true);
 
             }
+            else if (hit.collider.CompareTag("kid"))
+            {
+                mano.SetActive(true);
+                niño1.PuedoAgarrar = true;
+            }
+            else if (hit.collider.CompareTag("kid2"))
+            {
+                mano.SetActive(true);
+                niño2.PuedoAgarrar = true;
+
+            }
             else if (hit.collider.CompareTag("linterna"))
             {
+                mano.SetActive(true);
                 linternaObj.isOnlinte = true;
                 linternaObj.TextLinternaPuedo.SetActive(true);
             }
             else if (hit.collider.CompareTag("Cosa"))
             {
+                mano.SetActive(true);
                 hit.collider.gameObject.SetActive(false);
                 timelineCosa.timelineplay();
             }
@@ -67,6 +81,8 @@ public class MouseLook : MonoBehaviour
                 linternaObj.isOnlinte = false;
                 medicamentoObj.textoRecogerMedi.SetActive(false);
                 medicamentoObj.IsOnMedi = false;
+                niño1.PuedoAgarrar = false;
+                niño2.PuedoAgarrar = false;
 
             }
             else if (hit.collider.CompareTag("Fantasmita"))
@@ -80,6 +96,9 @@ public class MouseLook : MonoBehaviour
                 linternaObj.isOnlinte = false;
                 mano.SetActive(false);
                 linternaObj.TextLinternaPuedo.SetActive(false);
+                niño1.PuedoAgarrar = false;
+                niño2.PuedoAgarrar = false;
+
             }
         }
         else
@@ -89,10 +108,10 @@ public class MouseLook : MonoBehaviour
             linternaObj.isOnlinte = false;
             mano.SetActive(false);
             linternaObj.TextLinternaPuedo.SetActive(false);
+            niño1.PuedoAgarrar = false;
+            niño2.PuedoAgarrar = false;
+
         }
-
-
-
 
         float mouseX = Input.GetAxis("Mouse X") * mouseSensivility * Time.deltaTime; 
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensivility * Time.deltaTime;

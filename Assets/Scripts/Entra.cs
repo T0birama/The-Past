@@ -13,7 +13,7 @@ public class Entra : MonoBehaviour
     public GameObject audioA;
     public GameObject fantasma;
    
-    public SiSeApagaEstePrendoEste si;
+    //public SiSeApagaEstePrendoEste si;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,7 +47,7 @@ public class Entra : MonoBehaviour
         audioA.SetActive(false);
         gameObject.SetActive(false);
         fantasma.SetActive(true);
-        si.prendido = true;
+        //si.prendido = true;
     }
 
 }

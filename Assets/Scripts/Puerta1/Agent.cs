@@ -38,7 +38,7 @@ public class Agent : MonoBehaviour
         }
         else if (distance <= chaseRadius)
         {
-           ChasePlayer();
+           //ChasePlayer();
         }
     }
 

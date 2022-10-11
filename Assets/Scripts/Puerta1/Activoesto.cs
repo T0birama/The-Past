@@ -25,7 +25,7 @@ public class Activoesto : MonoBehaviour
 
     IEnumerator prender()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
         cabezas.SetActive(false);
     }
 }
