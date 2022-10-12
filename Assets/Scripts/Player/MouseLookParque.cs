@@ -5,57 +5,58 @@ using UnityEngine.Playables;
 
 public class MouseLookParque : MonoBehaviour
 {
-    public Texture2D cursorActivo, cursorNada;
-    private Transform Camara;
+    public GameObject mano;
+    [Header("Mouse Settings")]
+    public float distance = 1f;
 
-    public PlayableDirector timelineCanvas;
-    public PlayableDirector timelineCrossAir;
-
-    public bool OnAnimation;
-
-    public float distance = 20;
     public float mouseSensivility = 200f;
 
-    Vector2 sensivility;
-
     public Transform playerBody;
+    [Header("Objetos/linterna/Medicamento")]
+    
 
-    //float xRotation = 0f;
+    public RaycastHit hit;
+
+    [Header("Puertas")]
+
+    [Header("Otras cosas")]
+    
+
+
+    public float xRotation = 0f;
     // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        Camara = transform.Find("CameraPlayer");
+
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X");  
-        float mouseY = Input.GetAxis("Mouse Y");
 
-        if(mouseX != 0)
-        {
-            transform.Rotate(Vector3.up * mouseX * sensivility.x);
-        }
+        Debug.DrawRay(transform.position, transform.forward * distance, Color.red);
 
-        if(mouseY != 0)
+        if (Physics.Raycast(transform.position, transform.forward, out hit, distance))
         {
-            //Camara.Rotate(Vector3.left * mouseY * sensivility.y);
-            float angle = (Camara.localEulerAngles.x - mouseY * sensivility.y + 360 ) % 360;
-            if(angle > 180)
+            if (hit.collider.CompareTag("Untagged"))
             {
-                angle -= 360;
+                mano.SetActive(false);
+
+
             }
-            angle = Mathf.Clamp(angle, -80 , 80); 
-            Camara.localEulerAngles = Vector3.right * angle;
+            
         }
 
-        /*xRotation -= mouseY;
-        xRotation = Mathf.Clamp(xRotation, -90f , 90f);
-        transform.localRotation = Quaternion.Euler(xRotation,0f,0f);
-        playerBody.Rotate(Vector3.up * mouseX);*/
+        float mouseX = Input.GetAxis("Mouse X") * mouseSensivility * Time.deltaTime;
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensivility * Time.deltaTime;
+
+        xRotation -= mouseY;
+        xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+        transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
+        playerBody.Rotate(Vector3.up * mouseX);
     }
+
 }
 
     

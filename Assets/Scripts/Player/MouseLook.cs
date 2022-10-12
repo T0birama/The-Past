@@ -24,6 +24,7 @@ public class MouseLook : MonoBehaviour
     public TimelinePlay timelineCosa;
     public Entidad1 niño1;
     public Entidad1 niño2;
+    public Entidad1Fin niño3;
     
 
     float xRotation = 0f;
@@ -60,6 +61,12 @@ public class MouseLook : MonoBehaviour
             {
                 mano.SetActive(true);
                 niño2.PuedoAgarrar = true;
+
+            }
+            else if (hit.collider.CompareTag("kid3"))
+            {
+                mano.SetActive(true);
+                niño3.Agarrar = true;
 
             }
             else if (hit.collider.CompareTag("linterna"))
