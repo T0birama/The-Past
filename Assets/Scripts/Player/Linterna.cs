@@ -9,7 +9,7 @@ public class Linterna : MonoBehaviour
     public Locura loc;
     public LuzReduction lu;
 
-    bool esta;
+    public bool esta;
     // Start is called before the first frame update
     void Start()
     {

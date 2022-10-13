@@ -12,6 +12,7 @@ public class Entidad1Fin : MonoBehaviour
     public GameObject estasLuces;
     public GameObject otrasLuces;
 
+    public Linterna lin;
     public GameObject TimelineNiño3ParaParar;
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,8 @@ public class Entidad1Fin : MonoBehaviour
                 estasLuces.SetActive(false);
                 otrasLuces.SetActive(true);
                 StartCoroutine(ApagarTimeline());
+                lin.enabled = true;
+                
             
             }
         }

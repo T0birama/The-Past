@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class Agent : MonoBehaviour
 {
+    public Locura loc;
     public Transform player;
     public Transform[] moveSpots;
     private int randomSpot;
@@ -71,5 +72,14 @@ public class Agent : MonoBehaviour
         }
     }
 
-    
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            loc.cordura -= 0.05f * Time.deltaTime;
+            loc.volume.weight += 0.05f * Time.deltaTime;
+        }
+    }
+
+
 }

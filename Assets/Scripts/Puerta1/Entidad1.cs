@@ -12,6 +12,7 @@ public class Entidad1 : MonoBehaviour
     public GameObject otrasLuces;
     public PlayableDirector TimelinePillado;
     public GameObject navmesh;
+    public Linterna lin;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,8 @@ public class Entidad1 : MonoBehaviour
 
                 TimelinePillado.Play();
                 navmesh.SetActive(true);
+                lin.Lantern.SetActive(false);
+                lin.enabled = false;
             }
        }
 
