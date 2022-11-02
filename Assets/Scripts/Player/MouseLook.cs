@@ -15,6 +15,7 @@ public class MouseLook : MonoBehaviour
     [Header ("Objetos/linterna/Medicamento")]
     public ObjON linternaObj;
     public Item medicamentoObj;
+    public Note1 nota1;
 
     public RaycastHit hit;
 
@@ -48,9 +49,16 @@ public class MouseLook : MonoBehaviour
 
                 //hit.collider.gameObject.GetComponent<Item>().IsOnMedi = true;
                 //hit.collider.gameObject.GetComponent<Item>().textoRecogerMedi.SetActive(true);
+                mano.SetActive(true);
                 medicamentoObj.IsOnMedi = true;
-                medicamentoObj.textoRecogerMedi.SetActive(true);
+                
 
+            }
+            else if (hit.collider.CompareTag("Note1"))
+            {
+                mano.SetActive(true);
+                nota1.IsOnNote1 = true;
+                
             }
             else if (hit.collider.CompareTag("kid"))
             {
@@ -73,7 +81,7 @@ public class MouseLook : MonoBehaviour
             {
                 mano.SetActive(true);
                 linternaObj.isOnlinte = true;
-                linternaObj.TextLinternaPuedo.SetActive(true);
+              
             }
             else if (hit.collider.CompareTag("Cosa"))
             {
@@ -84,7 +92,7 @@ public class MouseLook : MonoBehaviour
             else if (hit.collider.CompareTag("Untagged"))
             {
                 mano.SetActive(false);
-                linternaObj.TextLinternaPuedo.SetActive(false);
+                
                 linternaObj.isOnlinte = false;
                 medicamentoObj.textoRecogerMedi.SetActive(false);
                 medicamentoObj.IsOnMedi = false;
@@ -98,25 +106,29 @@ public class MouseLook : MonoBehaviour
             }
             else
             {
-                medicamentoObj.textoRecogerMedi.SetActive(false);
+                
                 medicamentoObj.IsOnMedi = false;
                 linternaObj.isOnlinte = false;
                 mano.SetActive(false);
-                linternaObj.TextLinternaPuedo.SetActive(false);
+                
                 niño1.PuedoAgarrar = false;
                 niño2.PuedoAgarrar = false;
+                nota1.IsOnNote1 = false;
+                
 
             }
         }
         else
         {
-            medicamentoObj.textoRecogerMedi.SetActive(false);
+            
             medicamentoObj.IsOnMedi = false;
             linternaObj.isOnlinte = false;
             mano.SetActive(false);
-            linternaObj.TextLinternaPuedo.SetActive(false);
+            
             niño1.PuedoAgarrar = false;
             niño2.PuedoAgarrar = false;
+            nota1.IsOnNote1 = false;
+            
 
         }
 

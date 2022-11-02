@@ -28,6 +28,7 @@ TagManager:
   - kid2
   - kid3
   - mama
+  - Note1
   layers:
   - Default
   - TransparentFX
