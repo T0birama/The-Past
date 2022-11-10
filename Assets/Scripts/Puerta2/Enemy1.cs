@@ -11,13 +11,16 @@ public class Enemy1 : MonoBehaviour
     public GameObject SCP173;
     public Transform player;
     public float speed = 20;
-    public bool isLooking;
+    public bool isOnCamera;
     public bool upOrDown = false;
     public bool isVisible = true;
     public NavMeshAgent SCP173Nav;
 
     public Camera virtualCamera;
 
+    RaycastHit hit;
+    float distance;
+    bool playerHasLineOfSight = false;
 
     private void Start()
     {
@@ -44,30 +47,57 @@ public class Enemy1 : MonoBehaviour
             trigger.SetActive(true);
         }*/
 
-        if (isLooking == false)
+
+        distance = Vector3.Distance(transform.position, player.transform.position);
+        Debug.DrawRay(transform.position, (player.transform.position - transform.position).normalized * distance, Color.red);
+        if (Physics.Raycast(transform.position, (player.transform.position - transform.position).normalized, out hit, distance))
+        {
+            if (hit.collider.CompareTag("Player"))
+            {
+                playerHasLineOfSight = true;
+            }
+            else
+            {
+                playerHasLineOfSight = false;
+            }
+        }
+
+        if (playerHasLineOfSight == false || isOnCamera == false)
+        {
+            StartCoroutine(movimientoEnemy());
+        }
+        else if(isOnCamera == false)
         {
             StartCoroutine(movimientoEnemy());
         }
         else
         {
-            if (SCP173Nav.enabled) SCP173Nav.SetDestination(SCP173.transform.position);
+            if (SCP173Nav.enabled)
+            {
+                SCP173Nav.SetDestination(SCP173.transform.position);
+            }
+
             trigger.SetActive(false);
             StopAllCoroutines();
         }
 
-        transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        //transform.position = new Vector3(transform.position.x, 0, transform.position.z);
         transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-    }
 
+    }
 
     IEnumerator movimientoEnemy()
     {
         yield return new WaitForSeconds(0.5f);
 
-        if (SCP173Nav.enabled) SCP173Nav.SetDestination(player.position);
+        if (SCP173Nav.enabled)
+        {
+            SCP173Nav.SetDestination(player.position);
+        }
+
         SCP173.transform.LookAt(player.position);
         trigger.SetActive(true);
-        StartCoroutine(ParaMovimiento());
+        //StartCoroutine(ParaMovimiento());
     }
 
     IEnumerator ParaMovimiento()
@@ -81,14 +111,14 @@ public class Enemy1 : MonoBehaviour
 
     private void OnBecameVisible()
     {
-        isLooking = true;
+        isOnCamera = true;
         upOrDown = false;
         trigger.SetActive(false);
     }
     private void OnBecameInvisible()
     {
         upOrDown = true;
-        isLooking = false;
+        isOnCamera = false;
         trigger.SetActive(true);
     }
 
