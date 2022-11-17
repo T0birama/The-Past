@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1205125
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &29559722
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -852,7 +852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &33754599
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -878,7 +878,7 @@ GameObject:
   - component: {fileID: 36095774}
   - component: {fileID: 36095773}
   - component: {fileID: 36095775}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1195,7 +1195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &61675018
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &80234394
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1685,7 +1685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &115428225
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1930,7 +1930,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &116953320
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2175,7 +2175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &127465691
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2420,7 +2420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &138284503
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2665,7 +2665,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &150436939
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3045,7 +3045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &156727297
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3290,7 +3290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &165082297
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3535,7 +3535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &187377237
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3780,7 +3780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &189555582
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4025,7 +4025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &189835005
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4270,7 +4270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &191102486
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4515,7 +4515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &200158997
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4806,7 +4806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &209005948
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5095,7 +5095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &217953956
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5475,7 +5475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &222277180
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5720,7 +5720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &225920662
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5965,7 +5965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &229875459
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6210,7 +6210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &229988242
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6455,7 +6455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &243631721
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6700,7 +6700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &264099321
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6945,7 +6945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &269456202
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7190,7 +7190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &270180341
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7572,7 +7572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &283578009
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7817,7 +7817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &288436371
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8062,7 +8062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &301613079
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8307,7 +8307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &308071666
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8321,6 +8321,31 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.13
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &327190854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5177534208114750747, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393119008}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &327190859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327190854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f0628c583a2654e91cbfda5298ed3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mano: {fileID: 1228915578}
+  distance: 5
+  mouseSensivility: 200
+  playerBody: {fileID: 1090693385}
+  linternaObj: {fileID: 1316989939}
+  medicamentoObj: {fileID: 2093793264}
+  nota1: {fileID: 2125210630}
 --- !u!1 &338310169
 GameObject:
   m_ObjectHideFlags: 0
@@ -8552,7 +8577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &338310174
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8797,7 +8822,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &340118916
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9042,7 +9067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &340460395
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9422,7 +9447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &342490995
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9863,7 +9888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &360074433
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10108,7 +10133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &361703155
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10353,7 +10378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &362638753
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10598,7 +10623,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &385406390
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10841,13 +10866,13 @@ MonoBehaviour:
   black: {fileID: 443706028}
   trigger: {fileID: 1169244161}
   SCP173: {fileID: 401967184}
-  player: {fileID: 1548725581}
+  player: {fileID: 1090693385}
   speed: 30
   isOnCamera: 0
   upOrDown: 0
   isVisible: 1
   SCP173Nav: {fileID: 401967186}
-  virtualCamera: {fileID: 1008746906}
+  virtualCamera: {fileID: 1265083782}
 --- !u!195 &401967186
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -11101,7 +11126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &418556133
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11346,7 +11371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &419371158
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11934,7 +11959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &467430274
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12179,7 +12204,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &488044051
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12424,7 +12449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &512127119
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12669,7 +12694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &515524164
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12914,7 +12939,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &516055023
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13159,7 +13184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &518398074
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13268,7 +13293,7 @@ GameObject:
   - component: {fileID: 528704620}
   - component: {fileID: 528704619}
   - component: {fileID: 528704618}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13585,7 +13610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &529075762
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13830,7 +13855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &531069528
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14075,7 +14100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &548284993
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14320,7 +14345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &557863581
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14565,7 +14590,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &563972624
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14810,7 +14835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &599251714
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15055,7 +15080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &605340573
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15300,7 +15325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &610870855
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15545,7 +15570,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &621156164
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15790,7 +15815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &630278196
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16035,7 +16060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &638669946
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16280,7 +16305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &656020979
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16525,7 +16550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &657085469
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16898,7 +16923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &672936065
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17143,7 +17168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &692202849
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17388,7 +17413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &702862597
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17633,7 +17658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &727105785
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17976,7 +18001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &748621135
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18221,7 +18246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &751231718
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18247,7 +18272,7 @@ GameObject:
   - component: {fileID: 776453283}
   - component: {fileID: 776453282}
   - component: {fileID: 776453281}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18564,7 +18589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &795711095
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18809,7 +18834,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &810081897
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19054,7 +19079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &825192773
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19510,7 +19535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &913148731
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19755,7 +19780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &919092647
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20000,7 +20025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &921320750
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20245,7 +20270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &937578879
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20490,7 +20515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &970098788
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20735,7 +20760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &987601628
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20749,12 +20774,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.13
   m_Center: {x: 0, y: 0, z: 0}
---- !u!20 &1008746906 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 5177534209090602256, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-    type: 3}
-  m_PrefabInstance: {fileID: 5177534208488703114}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1017075021
 GameObject:
   m_ObjectHideFlags: 0
@@ -20986,7 +21005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1017075026
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21231,7 +21250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1023334847
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21650,7 +21669,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1072025856
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21895,7 +21914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1073782045
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22140,7 +22159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1088826285
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22385,7 +22404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1089011111
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22630,7 +22649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1090512041
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22644,6 +22663,24 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.13
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1090693380 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5177534207477983682, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393119008}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f8243bbd4ad8e843bd3a4b7d751742e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1090693385 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393119008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1093923927
 GameObject:
   m_ObjectHideFlags: 0
@@ -22924,7 +22961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1116376791
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23169,7 +23206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1140898860
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23414,7 +23451,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1157980080
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23659,7 +23696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1167920551
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23949,7 +23986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1188283871
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24194,7 +24231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1194358891
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24439,7 +24476,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1199718193
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -24684,7 +24721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1228307294
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25140,7 +25177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1232264671
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25483,7 +25520,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1248415807
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25728,7 +25765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1250311260
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25973,7 +26010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1258828382
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -25987,6 +26024,12 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.13
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!20 &1265083782 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 5177534209090602256, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393119008}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1269614305
 GameObject:
   m_ObjectHideFlags: 0
@@ -26218,7 +26261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1269614310
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26463,7 +26506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1285049877
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26708,7 +26751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1290717407
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26953,7 +26996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1295110651
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27289,7 +27332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1307090020
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27534,7 +27577,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1312413703
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -27826,7 +27869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1317431019
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28071,7 +28114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1324040824
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28316,7 +28359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1326031838
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28561,7 +28604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1355106475
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -28806,7 +28849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1368793857
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29051,7 +29094,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1370871448
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29065,6 +29108,126 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.13
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1393119008
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5177534207477983682, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: slider
+      value: 
+      objectReference: {fileID: 427905426}
+    - target: {fileID: 5177534207477983682, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: volume
+      value: 
+      objectReference: {fileID: 1093923928}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -906.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -351.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -472
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983692, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207477983692, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207641904689, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.98
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534207683652590, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: notaMesa
+      value: 
+      objectReference: {fileID: 201528070}
+    - target: {fileID: 5177534208088847350, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: medi
+      value: 
+      objectReference: {fileID: 2093793264}
+    - target: {fileID: 5177534209090602256, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: near clip plane
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5599976
+      objectReference: {fileID: 0}
+    - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5177534208114750748, guid: 8bbce6a508c75ec4d9862ebc6eed230b, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 8bbce6a508c75ec4d9862ebc6eed230b, type: 3}
 --- !u!1 &1413146438
 GameObject:
   m_ObjectHideFlags: 0
@@ -29296,7 +29459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1413146443
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29541,7 +29704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1440463047
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29786,7 +29949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1444059834
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30031,7 +30194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1448056508
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30276,7 +30439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1466528234
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30521,7 +30684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1466691837
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30766,7 +30929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1470146552
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31011,7 +31174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1472703222
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31256,7 +31419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1482204319
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31501,7 +31664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1486856937
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31746,7 +31909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1501749571
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31991,7 +32154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1506479675
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32236,7 +32399,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1507259841
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32481,7 +32644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1513935539
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32854,7 +33017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1526485682
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33099,7 +33262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1530307753
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33344,7 +33507,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1535893141
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33589,7 +33752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1538434028
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33834,7 +33997,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1540065632
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -33848,24 +34011,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.13
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1548725576 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5177534207477983682, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-    type: 3}
-  m_PrefabInstance: {fileID: 5177534208488703114}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f8243bbd4ad8e843bd3a4b7d751742e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1548725581 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-    type: 3}
-  m_PrefabInstance: {fileID: 5177534208488703114}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1549361865
 GameObject:
   m_ObjectHideFlags: 0
@@ -34097,7 +34242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1549361870
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34342,7 +34487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1553257901
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34587,7 +34732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1556904904
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34832,7 +34977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1569565097
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35077,7 +35222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1577331449
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35322,7 +35467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1584006456
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35567,7 +35712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1594846707
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35947,7 +36092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1608760185
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36327,7 +36472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1638406780
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36621,7 +36766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1663993589
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36994,7 +37139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1682813732
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -37239,7 +37384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1700642022
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -37314,7 +37459,7 @@ GameObject:
   - component: {fileID: 1724747896}
   - component: {fileID: 1724747895}
   - component: {fileID: 1724747894}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Plane (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37957,7 +38102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1761574199
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38202,7 +38347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1807100480
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38447,7 +38592,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1812086709
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38692,7 +38837,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1827472061
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38937,7 +39082,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1835440883
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39182,7 +39327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1873129873
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39427,7 +39572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1897939781
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39672,7 +39817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1899458526
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39937,6 +40082,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: ff0e5789eb8c81d42be896d937a93a01,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8391222552659086748, guid: ff0e5789eb8c81d42be896d937a93a01,
         type: 3}
@@ -41320,6 +41470,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -516098083770646512, guid: ff0e5789eb8c81d42be896d937a93a01,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -516098083770646512, guid: ff0e5789eb8c81d42be896d937a93a01,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
@@ -41572,6 +41727,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: paredesPuerta2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ff0e5789eb8c81d42be896d937a93a01,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ff0e5789eb8c81d42be896d937a93a01,
         type: 3}
@@ -43150,7 +43310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1931198875
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43395,7 +43555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1932861915
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43640,7 +43800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1947864460
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43885,7 +44045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1982808326
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44130,7 +44290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &1985363434
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44416,7 +44576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2004245336
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44661,7 +44821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2020435841
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -44906,7 +45066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2024454489
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45151,7 +45311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2024712235
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45396,7 +45556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2053675610
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45641,7 +45801,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2058002919
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45886,7 +46046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2073709307
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46131,7 +46291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2080489728
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46376,7 +46536,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2086816983
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46669,7 +46829,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2115284978
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -46960,7 +47120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2136033062
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47205,7 +47365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f8e8a10f1e45c0429e436634ae17afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locura: {fileID: 1548725576}
+  locura: {fileID: 1090693380}
 --- !u!135 &2147275435
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -47219,122 +47379,3 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 5.13
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &5177534208488703114
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5177534207477983682, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: slider
-      value: 
-      objectReference: {fileID: 427905426}
-    - target: {fileID: 5177534207477983682, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: volume
-      value: 
-      objectReference: {fileID: 1093923928}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -906.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -351.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -472
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534207477983692, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534208114750748, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: mano
-      value: 
-      objectReference: {fileID: 1228915578}
-    - target: {fileID: 5177534208114750748, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: nota1
-      value: 
-      objectReference: {fileID: 2125210630}
-    - target: {fileID: 5177534208114750748, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: linternaObj
-      value: 
-      objectReference: {fileID: 1316989939}
-    - target: {fileID: 5177534208114750748, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: medicamentoObj
-      value: 
-      objectReference: {fileID: 2093793264}
-    - target: {fileID: 5177534209090602256, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: near clip plane
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.5599976
-      objectReference: {fileID: 0}
-    - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8bbce6a508c75ec4d9862ebc6eed230b, type: 3}

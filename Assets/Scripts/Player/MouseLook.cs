@@ -37,7 +37,7 @@ public class MouseLook : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void Update()
+    void Update()
     {
        
         Debug.DrawRay(transform.position, transform.forward * distance, Color.red);
