@@ -10,7 +10,7 @@ public class Item : MonoBehaviour
     public bool IsOnMedi;
     //public GameObject imageMedic;
     public GameObject mediMano;
-    public GameObject textoRecogerMedi;
+    
     
     //public Inventory inventory;
 
@@ -25,7 +25,7 @@ public class Item : MonoBehaviour
                 gameObject.SetActive(false);
                 //imageMedic.SetActive(false); 
                 mediMano.SetActive(true);
-                textoRecogerMedi.SetActive(false);
+                
                 //inventory.medicamentoCount += 1;
                 //inventory.TimelineApagando.Play();
             }

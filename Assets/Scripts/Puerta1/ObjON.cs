@@ -10,7 +10,7 @@ public class ObjON : MonoBehaviour
     public GameObject LinternaDeSuelo;
     public GameObject LinternaDePlayer;
     //public Inventory inventory;
-    public GameObject TextLinternaPuedo;
+    
 
     
 
@@ -31,7 +31,7 @@ public class ObjON : MonoBehaviour
                 //LinternaImage.SetActive(true);
                 LinternaDePlayer.SetActive(true);
                 LinternaDeSuelo.SetActive(false);
-                TextLinternaPuedo.SetActive(false);
+                
                 //inventory.TimelineApagando.Play();
 
                 

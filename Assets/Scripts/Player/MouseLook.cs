@@ -94,7 +94,7 @@ public class MouseLook : MonoBehaviour
                 mano.SetActive(false);
                 
                 linternaObj.isOnlinte = false;
-                medicamentoObj.textoRecogerMedi.SetActive(false);
+                
                 medicamentoObj.IsOnMedi = false;
                 niño1.PuedoAgarrar = false;
                 niño2.PuedoAgarrar = false;
