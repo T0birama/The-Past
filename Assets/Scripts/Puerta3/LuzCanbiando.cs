@@ -7,6 +7,8 @@ public class LuzCanbiando : MonoBehaviour
 {
     public PlayableDirector TimelineLuzApagar;
     public PlayableDirector TimelineLuzPrender;
+    public float TiempoDeNoche;
+    public float TiemporDeDia;
 
     // Start is called before the first frame update
     void Start()
@@ -22,7 +24,7 @@ public class LuzCanbiando : MonoBehaviour
 
     IEnumerator ApagarLuz()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(TiempoDeNoche);
         TimelineLuzPrender.Play();
         TimelineLuzApagar.Stop();
         StartCoroutine(EmpezarAMoverse());
@@ -31,7 +33,7 @@ public class LuzCanbiando : MonoBehaviour
 
     IEnumerator EmpezarAMoverse()
 {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(TiemporDeDia);
         TimelineLuzApagar.Play();
         TimelineLuzPrender.Stop();
         StartCoroutine(ApagarLuz());
