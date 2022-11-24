@@ -88,7 +88,7 @@ public class Enemy1 : MonoBehaviour
 
     IEnumerator movimientoEnemy()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(5f);
 
         if (SCP173Nav.enabled)
         {
