@@ -115169,7 +115169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e4f9030756e5947a439075f5e6e379, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scena: 1
+  scena: 3
   fadedBlack: {fileID: 241076939}
   ison: 0
   Texto: {fileID: 1907054586}
