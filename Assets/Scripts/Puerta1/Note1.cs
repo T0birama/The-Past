@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Note1 : MonoBehaviour
 {
-    
+    public GameObject dejar;
     public bool IsOnNote1;
     public GameObject NoteMano;
     // Start is called before the first frame update
@@ -20,6 +20,7 @@ public class Note1 : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                dejar.SetActive(true);
                 NoteMano.SetActive(true);
                 gameObject.SetActive(false);
             }

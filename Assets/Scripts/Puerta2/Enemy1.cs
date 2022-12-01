@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using Cinemachine;
+using UnityEngine.Playables;
 
 public class Enemy1 : MonoBehaviour
 {
+    public Animator Animator1;
     public GameObject black;
     public GameObject trigger;
     public GameObject SCP173;
@@ -55,30 +57,49 @@ public class Enemy1 : MonoBehaviour
             if (hit.collider.CompareTag("Player"))
             {
                 playerHasLineOfSight = true;
+                isOnCamera = true;
             }
             else
             {
                 playerHasLineOfSight = false;
+                isOnCamera = false;
             }
         }
 
         if (playerHasLineOfSight == false || isOnCamera == false)
         {
-            StartCoroutine(movimientoEnemy());
+            Animator1.SetFloat("multi", 1f);
+            if (SCP173Nav.enabled)
+            {
+                SCP173Nav.SetDestination(player.position);
+            }
+
+            SCP173.transform.LookAt(player.position);
+            trigger.SetActive(true);
+            //StartCoroutine(ParaMovimiento());
         }
         else if(isOnCamera == false)
         {
-            StartCoroutine(movimientoEnemy());
+            Animator1.SetFloat("multi", 1f);
+            if (SCP173Nav.enabled)
+            {
+                SCP173Nav.SetDestination(player.position);
+            }
+
+            SCP173.transform.LookAt(player.position);
+            trigger.SetActive(true);
+            //StartCoroutine(ParaMovimiento());
         }
         else
         {
+            Animator1.SetFloat("multi", 0f);
             if (SCP173Nav.enabled)
             {
                 SCP173Nav.SetDestination(SCP173.transform.position);
             }
 
             trigger.SetActive(false);
-            StopAllCoroutines();
+            
         }
 
         //transform.position = new Vector3(transform.position.x, 0, transform.position.z);
@@ -86,37 +107,17 @@ public class Enemy1 : MonoBehaviour
 
     }
 
-    IEnumerator movimientoEnemy()
-    {
-        yield return new WaitForSeconds(5f);
-
-        if (SCP173Nav.enabled)
-        {
-            SCP173Nav.SetDestination(player.position);
-        }
-
-        SCP173.transform.LookAt(player.position);
-        trigger.SetActive(true);
-        //StartCoroutine(ParaMovimiento());
-    }
-
-    IEnumerator ParaMovimiento()
-    {
-        yield return new WaitForSeconds(0.5f);
-        if (SCP173Nav.enabled) SCP173Nav.SetDestination(SCP173.transform.position);
-        trigger.SetActive(false);
-        StartCoroutine(movimientoEnemy());
-
-    }
 
     private void OnBecameVisible()
     {
+        
         isOnCamera = true;
         upOrDown = false;
         trigger.SetActive(false);
     }
     private void OnBecameInvisible()
     {
+       
         upOrDown = true;
         isOnCamera = false;
         trigger.SetActive(true);

@@ -29,6 +29,7 @@ TagManager:
   - kid3
   - mama
   - Note1
+  - Enemy1
   layers:
   - Default
   - TransparentFX

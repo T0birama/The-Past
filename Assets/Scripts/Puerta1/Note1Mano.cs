@@ -5,6 +5,7 @@ using UnityEngine;
 public class Note1Mano : MonoBehaviour
 {
     public GameObject notaMesa;
+    public GameObject Dejar1;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +20,7 @@ public class Note1Mano : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
+                Dejar1.SetActive(false);
                 notaMesa.SetActive(true);
                 gameObject.SetActive(false);
             }

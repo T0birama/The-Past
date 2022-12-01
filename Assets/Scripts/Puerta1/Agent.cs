@@ -13,6 +13,7 @@ public class Agent : MonoBehaviour
     public float distToPlayer = 5.0f;
     public float chaseRadius = 20f;
     public float facePlayerFactor = 20f;
+    public Animator animator1;
 
     private float waitTime;
     public float startWaitTime = 1f;
@@ -46,7 +47,7 @@ public class Agent : MonoBehaviour
     void Patroling()
     {
         nav.SetDestination(moveSpots[randomSpot].position);
-
+        animator1.SetFloat("multi", 0.5f); 
         if (Vector3.Distance(transform.position, moveSpots[randomSpot].position) < 2.0f)
         {
             if (waitTime <= 0)
@@ -65,10 +66,11 @@ public class Agent : MonoBehaviour
     void ChasePlayer()
     {
         float distance = Vector3.Distance(player.position, transform.position);
-
+        animator1.SetFloat("multi", 1f);
         if (distance <= chaseRadius && distance > distToPlayer)
         {
             nav.SetDestination(player.transform.position);
+
         }
     }
 

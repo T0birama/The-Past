@@ -21,6 +21,7 @@ public class MouseLook2 : MonoBehaviour
     [Header("Puertas")]
 
     [Header("Otras cosas")]
+    public Enemy1 enemy;
 
 
     
@@ -66,9 +67,13 @@ public class MouseLook2 : MonoBehaviour
             {
                 hit.collider.gameObject.SetActive(false);
             }
+            else if (hit.collider.CompareTag("Enemy1"))
+            {
+                enemy.isOnCamera = true;
+            }
             else
             {
-                
+                enemy.isOnCamera = false;
                 medicamentoObj.IsOnMedi = false;
                 linternaObj.isOnlinte = false;
                 mano.SetActive(false);
