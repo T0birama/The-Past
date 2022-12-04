@@ -10,7 +10,7 @@ public class Entra : MonoBehaviour
     public PlayableDirector TimelineVamos;
     public Locura locura;
     public GameObject luces;
-    public GameObject audioA;
+    
     public GameObject fantasma;
    
     //public SiSeApagaEstePrendoEste si;
@@ -44,7 +44,7 @@ public class Entra : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         luces.SetActive(false);
-        audioA.SetActive(false);
+       
         gameObject.SetActive(false);
         fantasma.SetActive(true);
         //si.prendido = true;

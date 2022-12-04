@@ -21,13 +21,9 @@ public class SonidoON : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             ON.SetActive(true);
-            StartCoroutine(apagarsonido());
+            
         }
     }
 
-    IEnumerator apagarsonido()
-    {
-        yield return new WaitForSeconds(3);
-        ON.SetActive(false);
-    }
+    
 }

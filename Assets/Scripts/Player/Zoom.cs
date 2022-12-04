@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class Zoom : MonoBehaviour
 {
-    public Locura loc;
+    
     public CinemachineVirtualCamera cameraPJ;
 
     public float fov = 60;
@@ -26,17 +26,7 @@ public class Zoom : MonoBehaviour
             cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 1;
         }
 
-        if(loc.cordura <= 0.5f)
-        {
-            cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain += 0.01f;
-            cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 1;
-        }
-        else
-        {
-            cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain -= 0.1f;
-            cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_AmplitudeGain = 1;
-
-        }
+     
 
         cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain = Mathf.Clamp(cameraPJ.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>().m_FrequencyGain, 0 , 2);
 

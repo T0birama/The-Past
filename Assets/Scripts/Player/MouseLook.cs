@@ -62,18 +62,18 @@ public class MouseLook : MonoBehaviour
             }
             else if (hit.collider.CompareTag("kid"))
             {
-                mano.SetActive(true);
+                
                 niño1.PuedoAgarrar = true;
             }
             else if (hit.collider.CompareTag("kid2"))
             {
-                mano.SetActive(true);
+                
                 niño2.PuedoAgarrar = true;
 
             }
             else if (hit.collider.CompareTag("kid3"))
             {
-                mano.SetActive(true);
+                
                 niño3.Agarrar = true;
 
             }

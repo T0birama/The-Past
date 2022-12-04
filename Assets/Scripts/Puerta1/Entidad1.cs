@@ -17,29 +17,29 @@ public class Entidad1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PuedoAgarrar = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-       if(PuedoAgarrar == true)
-       {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                esteKid.SetActive(false);
-                otroKid.SetActive(true);
-                estasLuces.SetActive(false);
-                otrasLuces.SetActive(true);
+       
 
-                TimelinePillado.Play();
-                navmesh.SetActive(true);
-                lin.Lantern.SetActive(false);
-                lin.enabled = false;
-            }
-       }
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            esteKid.SetActive(false);
+            otroKid.SetActive(true);
+            estasLuces.SetActive(false);
+            otrasLuces.SetActive(true);
 
-
+            TimelinePillado.Play();
+            navmesh.SetActive(true);
+            lin.Lantern.SetActive(false);
+            lin.enabled = false;
+        }
     }
 }
