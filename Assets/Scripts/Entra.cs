@@ -10,7 +10,7 @@ public class Entra : MonoBehaviour
     public PlayableDirector TimelineVamos;
     public Locura locura;
     public GameObject luces;
-    
+        
     public GameObject fantasma;
    
     //public SiSeApagaEstePrendoEste si;

@@ -6,7 +6,7 @@ using DG.Tweening;
 
 public class Zoom : MonoBehaviour
 {
-    
+        
     public CinemachineVirtualCamera cameraPJ;
 
     public float fov = 60;
