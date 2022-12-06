@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using UnityEngine.Rendering;
+using Cinemachine;
 
 public class Entra : MonoBehaviour
 {
@@ -10,8 +11,9 @@ public class Entra : MonoBehaviour
     public PlayableDirector TimelineVamos;
     public Locura locura;
     public GameObject luces;
-        
+    public Transform Virtualcamera;
     public GameObject fantasma;
+    public Transform EnemyTransform;
    
     //public SiSeApagaEstePrendoEste si;
     // Start is called before the first frame update
@@ -37,6 +39,8 @@ public class Entra : MonoBehaviour
             locura.volume.weight += 0.1f ;
             StartCoroutine(lucesApagadas());
 
+            Virtualcamera.LookAt(EnemyTransform);
+
         }
     }
 
@@ -44,7 +48,9 @@ public class Entra : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
         luces.SetActive(false);
-       
+        Virtualcamera.LookAt(null);
+
+
         gameObject.SetActive(false);
         fantasma.SetActive(true);
         //si.prendido = true;

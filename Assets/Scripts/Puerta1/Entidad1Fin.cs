@@ -12,33 +12,19 @@ public class Entidad1Fin : MonoBehaviour
     public GameObject estasLuces;
     public GameObject otrasLuces;
 
-    public Linterna lin;
+    
     public GameObject TimelineNiño3ParaParar;
     // Start is called before the first frame update
     void Start()
     {
-        Agarrar = false;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(Agarrar == true)
-        {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                timelineNiño3.Play();
-                salida.SetActive(true);
-                navMama.SetActive(false);
-                estasLuces.SetActive(false);
-                otrasLuces.SetActive(true);
-                StartCoroutine(ApagarTimeline());
-                lin.enabled = true;
-                
-            
-            }
-        }
+        
         
     }
 
@@ -47,5 +33,18 @@ public class Entidad1Fin : MonoBehaviour
         yield return new WaitForSeconds(5);
         TimelineNiño3ParaParar.SetActive(false);
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            timelineNiño3.Play();
+            salida.SetActive(true);
+            navMama.SetActive(false);
+            estasLuces.SetActive(false);
+            otrasLuces.SetActive(true);
+            StartCoroutine(ApagarTimeline());
+        }
     }
 }

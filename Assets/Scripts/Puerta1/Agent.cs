@@ -16,7 +16,7 @@ public class Agent : MonoBehaviour
     public Animator animator1;
 
     private float waitTime;
-    public float startWaitTime = 1f;
+    public float startWaitTime = 0.5f;
     void Start()
     {
         waitTime = startWaitTime;
@@ -40,14 +40,14 @@ public class Agent : MonoBehaviour
         }
         else if (distance <= chaseRadius)
         {
-           //ChasePlayer();
+           ChasePlayer();
         }
     }
 
     void Patroling()
     {
         nav.SetDestination(moveSpots[randomSpot].position);
-        animator1.SetFloat("multi", 0.5f); 
+        animator1.SetFloat("multi", 0.01f); 
         if (Vector3.Distance(transform.position, moveSpots[randomSpot].position) < 2.0f)
         {
             if (waitTime <= 0)
@@ -74,14 +74,7 @@ public class Agent : MonoBehaviour
         }
     }
 
-    private void OnTriggerStay(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            loc.cordura -= 0.05f * Time.deltaTime;
-            loc.volume.weight += 0.05f * Time.deltaTime;
-        }
-    }
+    
 
 
 }

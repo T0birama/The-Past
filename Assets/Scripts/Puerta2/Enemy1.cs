@@ -17,7 +17,7 @@ public class Enemy1 : MonoBehaviour
     public bool upOrDown = false;
     public bool isVisible = true;
     public NavMeshAgent SCP173Nav;
-
+    
     public Camera virtualCamera;
 
     RaycastHit hit;
@@ -31,13 +31,13 @@ public class Enemy1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Vector3 viewPos = virtualCamera.WorldToViewportPoint(transform.position);
-        /*Renderer renderer = SCP173.GetComponent<Renderer>();
+         Vector3 viewPos = virtualCamera.WorldToViewportPoint(transform.position);
+         Renderer renderer = SCP173.GetComponent<Renderer>();
 
         if (renderer.isVisible)
         {
             Debug.Log("estoy viendo");
-            isLooking = true;
+            
             upOrDown = false;
             trigger.SetActive(false);
         }
@@ -45,9 +45,9 @@ public class Enemy1 : MonoBehaviour
         {
             Debug.Log("No lo veo");
             upOrDown = true;
-            isLooking = false;
+            
             trigger.SetActive(true);
-        }*/
+        }
 
 
         distance = Vector3.Distance(transform.position, player.transform.position);
@@ -117,7 +117,7 @@ public class Enemy1 : MonoBehaviour
     }
     private void OnBecameInvisible()
     {
-       
+        
         upOrDown = true;
         isOnCamera = false;
         trigger.SetActive(true);

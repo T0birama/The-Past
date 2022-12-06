@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PerderCorduraStay : MonoBehaviour
+public class SonidoONTimer : MonoBehaviour
 {
-    public Locura loc;
-    
+    public GameObject sonido;
+    public float timer = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,17 +17,17 @@ public class PerderCorduraStay : MonoBehaviour
     {
         
     }
-
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            loc.cordura -= 0.5f * Time.deltaTime;
-            loc.volume.weight += 0.5f * Time.deltaTime;
-
+            sonido.SetActive(true);
         }
     }
 
-
-
+    IEnumerator Timer()
+    {
+        yield return new WaitForSeconds(timer);
+        sonido.SetActive(false);
+    }
 }
