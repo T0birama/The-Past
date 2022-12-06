@@ -9,12 +9,21 @@ public class Fuerza : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb.AddForce(transform.right * fuerza);
+        
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            rb.AddForce(transform.right * fuerza);
+            gameObject.SetActive(false);
+        }
     }
 }

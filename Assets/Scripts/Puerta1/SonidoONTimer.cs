@@ -22,6 +22,7 @@ public class SonidoONTimer : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             sonido.SetActive(true);
+            StartCoroutine(Timer());
         }
     }
 

@@ -30,6 +30,8 @@ TagManager:
   - mama
   - Note1
   - Enemy1
+  - libros
+  - teclado
   layers:
   - Default
   - TransparentFX
