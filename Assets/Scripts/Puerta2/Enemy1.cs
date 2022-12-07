@@ -32,7 +32,7 @@ public class Enemy1 : MonoBehaviour
     void Update()
     {
          Vector3 viewPos = virtualCamera.WorldToViewportPoint(transform.position);
-         Renderer renderer = SCP173.GetComponent<Renderer>();
+         /*Renderer renderer = SCP173.GetComponent<Renderer>();
 
         if (renderer.isVisible)
         {
@@ -47,7 +47,7 @@ public class Enemy1 : MonoBehaviour
             upOrDown = true;
             
             trigger.SetActive(true);
-        }
+        }*/
 
 
         distance = Vector3.Distance(transform.position, player.transform.position);
@@ -110,7 +110,6 @@ public class Enemy1 : MonoBehaviour
 
     private void OnBecameVisible()
     {
-        
         isOnCamera = true;
         upOrDown = false;
         trigger.SetActive(false);

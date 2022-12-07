@@ -16,6 +16,8 @@ public class MouseLook : MonoBehaviour
     public ObjON linternaObj;
     public Item medicamentoObj;
     public Note1 nota1;
+    public PianoTouch P;
+   
 
     public RaycastHit hit;
 
