@@ -17,7 +17,9 @@ public class MouseLook : MonoBehaviour
     public Item medicamentoObj;
     public Note1 nota1;
     public PianoTouch P;
-   
+    public PianoTouch P2;
+    public PianoTouch P3;
+
 
     public RaycastHit hit;
 
@@ -94,7 +96,10 @@ public class MouseLook : MonoBehaviour
             else if (hit.collider.CompareTag("Untagged"))
             {
                 mano.SetActive(false);
-                
+                P.PuedoTocar = false;
+                P2.PuedoTocar = false;
+                P3.PuedoTocar = false;
+
                 linternaObj.isOnlinte = false;
                 
                 medicamentoObj.IsOnMedi = false;
@@ -106,9 +111,27 @@ public class MouseLook : MonoBehaviour
             {
                 hit.collider.gameObject.SetActive(false);
             }
+            else if (hit.collider.CompareTag("teclado"))
+            {
+                mano.SetActive(true);
+                P.PuedoTocar = true;
+            }
+            else if (hit.collider.CompareTag("teclado2"))
+            {
+                mano.SetActive(true);
+                P2.PuedoTocar = true;
+            }
+            else if (hit.collider.CompareTag("teclado3"))
+            {
+                mano.SetActive(true);
+                P3.PuedoTocar = true;
+            }
             else
             {
-                
+                P.PuedoTocar = false;
+                P2.PuedoTocar = false;
+                P3.PuedoTocar = false;
+
                 medicamentoObj.IsOnMedi = false;
                 linternaObj.isOnlinte = false;
                 mano.SetActive(false);

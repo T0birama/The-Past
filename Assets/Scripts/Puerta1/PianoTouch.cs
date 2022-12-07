@@ -33,5 +33,6 @@ public class PianoTouch : MonoBehaviour
         yield return new WaitForSeconds(TiempoDeSonido);
         gameObject.SetActive(false);
         P1.SetActive(true);
+        SonidoDePiano.SetActive(false);
     }
 }

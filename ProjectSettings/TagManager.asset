@@ -32,6 +32,8 @@ TagManager:
   - Enemy1
   - libros
   - teclado
+  - teclado2
+  - teclado3
   layers:
   - Default
   - TransparentFX
