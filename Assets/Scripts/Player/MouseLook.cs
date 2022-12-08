@@ -20,14 +20,7 @@ public class MouseLook : MonoBehaviour
     public PianoTouch P2;
     public PianoTouch P3;
     public ObjetoyTexto OBJtxt;
-    public ObjetoyTexto OBJtxt2;
-    public ObjetoyTexto OBJtxt3;
-    public ObjetoyTexto OBJtxt4;
-    public ObjetoyTexto OBJtxt5;
-    public ObjetoyTexto OBJtxt6;
-    public ObjetoyTexto OBJtxt7;
-    public ObjetoyTexto OBJtxt8;
-    public ObjetoyTexto OBJtxt9;
+    
 
 
 
@@ -108,15 +101,6 @@ public class MouseLook : MonoBehaviour
                 P2.PuedoTocar = false;
                 P3.PuedoTocar = false;
                 OBJtxt.EstaEnObjeto = false;
-                OBJtxt3.EstaEnObjeto = false;
-                OBJtxt3.EstaEnObjeto = false;
-                OBJtxt4.EstaEnObjeto = false;
-                OBJtxt5.EstaEnObjeto = false;
-                OBJtxt6.EstaEnObjeto = false;
-                OBJtxt7.EstaEnObjeto = false;
-                OBJtxt8.EstaEnObjeto = false;
-                OBJtxt9.EstaEnObjeto = false;
-                linternaObj.isOnlinte = false;
                 
                 medicamentoObj.IsOnMedi = false;
                 niño1.PuedoAgarrar = false;
@@ -147,15 +131,6 @@ public class MouseLook : MonoBehaviour
             {
                 mano.SetActive(true);
                 OBJtxt.EstaEnObjeto = true;
-                OBJtxt2.EstaEnObjeto = true;
-                OBJtxt3.EstaEnObjeto = true;
-                OBJtxt4.EstaEnObjeto = true;
-                OBJtxt5.EstaEnObjeto = true;
-                OBJtxt6.EstaEnObjeto = true;
-                OBJtxt7.EstaEnObjeto = true;
-                OBJtxt8.EstaEnObjeto = true;
-                OBJtxt9.EstaEnObjeto = true;
-
             }
             else
             {
@@ -164,14 +139,6 @@ public class MouseLook : MonoBehaviour
                 P3.PuedoTocar = false;
 
                 OBJtxt.EstaEnObjeto = false;
-                OBJtxt3.EstaEnObjeto = false;
-                OBJtxt3.EstaEnObjeto = false;
-                OBJtxt4.EstaEnObjeto = false;
-                OBJtxt5.EstaEnObjeto = false;
-                OBJtxt6.EstaEnObjeto = false;
-                OBJtxt7.EstaEnObjeto = false;
-                OBJtxt8.EstaEnObjeto = false;
-                OBJtxt9.EstaEnObjeto = false;
                 
 
                 medicamentoObj.IsOnMedi = false;
