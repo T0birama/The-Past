@@ -10,7 +10,6 @@ public class Item : MonoBehaviour
     public bool IsOnMedi;
     //public GameObject imageMedic;
     public GameObject mediMano;
-    public GameObject sonido;
     public float Timer = 5f;
     
     //public Inventory inventory;
@@ -21,12 +20,12 @@ public class Item : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                sonido.SetActive(true);
+                
                 ConsumibleMedicamento.SetActive(false);
                 gameObject.SetActive(false);
                 //imageMedic.SetActive(false); 
                 mediMano.SetActive(true);
-                StartCoroutine(sonidoOff());
+                
                 //inventory.medicamentoCount += 1;
                 //inventory.TimelineApagando.Play();
             }
@@ -40,8 +39,5 @@ public class Item : MonoBehaviour
         
     }
 
-    IEnumerator sonidoOff()
-    {
-        yield return new WaitForSeconds(Timer);
-    }
+    
 }

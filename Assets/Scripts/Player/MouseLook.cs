@@ -19,11 +19,19 @@ public class MouseLook : MonoBehaviour
     public PianoTouch P;
     public PianoTouch P2;
     public PianoTouch P3;
+    public ObjetoyTexto OBJtxt;
+    public ObjetoyTexto OBJtxt2;
+    public ObjetoyTexto OBJtxt3;
+    public ObjetoyTexto OBJtxt4;
+    public ObjetoyTexto OBJtxt5;
+    public ObjetoyTexto OBJtxt6;
+    public ObjetoyTexto OBJtxt7;
+    public ObjetoyTexto OBJtxt8;
+    public ObjetoyTexto OBJtxt9;
+
 
 
     public RaycastHit hit;
-
-    [Header("Puertas")]
 
     [Header("Otras cosas")]
     public TimelinePlay timelineCosa;
@@ -99,7 +107,15 @@ public class MouseLook : MonoBehaviour
                 P.PuedoTocar = false;
                 P2.PuedoTocar = false;
                 P3.PuedoTocar = false;
-
+                OBJtxt.EstaEnObjeto = false;
+                OBJtxt3.EstaEnObjeto = false;
+                OBJtxt3.EstaEnObjeto = false;
+                OBJtxt4.EstaEnObjeto = false;
+                OBJtxt5.EstaEnObjeto = false;
+                OBJtxt6.EstaEnObjeto = false;
+                OBJtxt7.EstaEnObjeto = false;
+                OBJtxt8.EstaEnObjeto = false;
+                OBJtxt9.EstaEnObjeto = false;
                 linternaObj.isOnlinte = false;
                 
                 medicamentoObj.IsOnMedi = false;
@@ -126,11 +142,37 @@ public class MouseLook : MonoBehaviour
                 mano.SetActive(true);
                 P3.PuedoTocar = true;
             }
+
+            else if (hit.collider.CompareTag("libros"))
+            {
+                mano.SetActive(true);
+                OBJtxt.EstaEnObjeto = true;
+                OBJtxt2.EstaEnObjeto = true;
+                OBJtxt3.EstaEnObjeto = true;
+                OBJtxt4.EstaEnObjeto = true;
+                OBJtxt5.EstaEnObjeto = true;
+                OBJtxt6.EstaEnObjeto = true;
+                OBJtxt7.EstaEnObjeto = true;
+                OBJtxt8.EstaEnObjeto = true;
+                OBJtxt9.EstaEnObjeto = true;
+
+            }
             else
             {
                 P.PuedoTocar = false;
                 P2.PuedoTocar = false;
                 P3.PuedoTocar = false;
+
+                OBJtxt.EstaEnObjeto = false;
+                OBJtxt3.EstaEnObjeto = false;
+                OBJtxt3.EstaEnObjeto = false;
+                OBJtxt4.EstaEnObjeto = false;
+                OBJtxt5.EstaEnObjeto = false;
+                OBJtxt6.EstaEnObjeto = false;
+                OBJtxt7.EstaEnObjeto = false;
+                OBJtxt8.EstaEnObjeto = false;
+                OBJtxt9.EstaEnObjeto = false;
+                
 
                 medicamentoObj.IsOnMedi = false;
                 linternaObj.isOnlinte = false;
