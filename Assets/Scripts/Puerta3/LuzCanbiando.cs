@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Playables;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LuzCanbiando : MonoBehaviour
 {
     public PlayableDirector TimelineLuzApagar;
     public PlayableDirector TimelineLuzPrender;
+    public PlayableDirector TimelineMuerte;
     public GameObject ColliderLocura;
     public float TiempoDeNoche;
     public float TiemporDeDia;
@@ -17,6 +19,7 @@ public class LuzCanbiando : MonoBehaviour
     public TimerEntidades t2;
     public GameObject Sol;
     public GameObject Luna;
+    public int scena;
 
 
 
@@ -39,18 +42,19 @@ public class LuzCanbiando : MonoBehaviour
         TimelineLuzPrender.Play();
         ColliderLocura.SetActive(true);
         TimelineLuzApagar.Stop();
-        StartCoroutine(EmpezarAMoverse());
+        StartCoroutine(Moriste());
         t1.enabled = true;
         Textt1.SetActive(true);
         t2.enabled = false;
         Textt2.SetActive(false);
         Sol.SetActive(true);
         Luna.SetActive(false);
+        TimelineMuerte.Play();
 
     }
 
     IEnumerator EmpezarAMoverse()
-{
+    {
         yield return new WaitForSeconds(TiemporDeDia);
         TimelineLuzApagar.Play();
         ColliderLocura.SetActive(false);
@@ -63,5 +67,26 @@ public class LuzCanbiando : MonoBehaviour
         Sol.SetActive(false);
         Luna.SetActive(true);
 
+    }
+
+    IEnumerator Moriste()
+    {
+        yield return new WaitForSeconds(TiemporDeDia);
+        TimelineLuzApagar.Play();
+        ColliderLocura.SetActive(false);
+        TimelineLuzPrender.Stop();
+        ResetEscena(scena);
+        t1.enabled = false;
+        Textt1.SetActive(false);
+        t2.enabled = true;
+        Textt2.SetActive(true);
+        Sol.SetActive(false);
+        Luna.SetActive(true);
+
+    }
+
+    public void ResetEscena(int esc)
+    {
+        SceneManager.LoadScene(esc);
     }
 }

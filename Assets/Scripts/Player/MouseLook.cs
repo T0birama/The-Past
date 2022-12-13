@@ -21,7 +21,9 @@ public class MouseLook : MonoBehaviour
     public PianoTouch P3;
     public ObjetoyTexto OBJtxt;
     
-    
+    public Juguete j1;
+    public Juguete j2;
+    public Juguete j3;
 
 
     public RaycastHit hit;
@@ -88,6 +90,23 @@ public class MouseLook : MonoBehaviour
                 linternaObj.isOnlinte = true;
               
             }
+            else if (hit.collider.CompareTag("Juguete1"))
+            {
+                mano.SetActive(true);
+                j1.puedeAgarrarJuguete = true;
+            }
+            else if (hit.collider.CompareTag("Juguete2"))
+            {
+                mano.SetActive(true);
+                j2.puedeAgarrarJuguete = true;
+
+            }
+            else if (hit.collider.CompareTag("Juguete3"))
+            {
+                mano.SetActive(true);
+                j3.puedeAgarrarJuguete = true;
+
+            }
             else if (hit.collider.CompareTag("Cosa"))
             {
                 mano.SetActive(true);
@@ -101,7 +120,11 @@ public class MouseLook : MonoBehaviour
                 P2.PuedoTocar = false;
                 P3.PuedoTocar = false;
                 OBJtxt.EstaEnObjeto = false;
-                
+
+                j1.puedeAgarrarJuguete = false;
+                j2.puedeAgarrarJuguete = false;
+                j3.puedeAgarrarJuguete = false;
+
                 medicamentoObj.IsOnMedi = false;
                 niño1.PuedoAgarrar = false;
                 niño2.PuedoAgarrar = false;
@@ -148,7 +171,10 @@ public class MouseLook : MonoBehaviour
                 niño1.PuedoAgarrar = false;
                 niño2.PuedoAgarrar = false;
                 nota1.IsOnNote1 = false;
-                
+
+                j1.puedeAgarrarJuguete = false;
+                j2.puedeAgarrarJuguete = false;
+                j3.puedeAgarrarJuguete = false;
 
             }
         }
