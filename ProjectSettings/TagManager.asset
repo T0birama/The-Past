@@ -34,6 +34,9 @@ TagManager:
   - teclado
   - teclado2
   - teclado3
+  - Juguete2
+  - Juguete1
+  - Juguete3
   layers:
   - Default
   - TransparentFX

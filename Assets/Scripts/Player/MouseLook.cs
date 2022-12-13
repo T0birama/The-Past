@@ -21,7 +21,7 @@ public class MouseLook : MonoBehaviour
     public PianoTouch P3;
     public ObjetoyTexto OBJtxt;
     
-
+    
 
 
     public RaycastHit hit;
