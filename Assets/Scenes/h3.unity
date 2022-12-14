@@ -297,6 +297,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5177534208114750747, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5177534208114750748, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: mano
@@ -345,37 +350,37 @@ PrefabInstance:
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.9900055
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.5799866
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.8900146
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.97533095
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.10351832
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.19388151
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.020577928
+      value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5177534208114750748, guid: 8bbce6a508c75ec4d9862ebc6eed230b, type: 3}
@@ -9694,7 +9699,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1261328442
 MonoBehaviour:
   m_ObjectHideFlags: 0
