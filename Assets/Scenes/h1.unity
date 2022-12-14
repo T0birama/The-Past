@@ -23882,37 +23882,37 @@ PrefabInstance:
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.18547821
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.0037856
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.58373225
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.22981903
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.44588754
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.8415238
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5177534209090602257, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.2005125
+      value: -0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5177534208114750748, guid: 8bbce6a508c75ec4d9862ebc6eed230b, type: 3}
@@ -26467,7 +26467,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &682526280
 Animator:
   serializedVersion: 4
@@ -26517,7 +26517,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 0.857868, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -35424,7 +35424,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7ca56944bee3c654ea4d8bd981cd1912,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4590992755923862223, guid: 7ca56944bee3c654ea4d8bd981cd1912,
         type: 3}
