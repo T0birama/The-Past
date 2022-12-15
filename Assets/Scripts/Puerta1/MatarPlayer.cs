@@ -30,7 +30,7 @@ public class MatarPlayer : MonoBehaviour
             Player.speed = 0;
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            mouse.mouseSensivility = 0;
+            mouse.lockMouse = true;
             botonesSaliendo.Play();
             botonesMuerte.SetActive(true);
             imagenMuerte.SetActive(true);
@@ -51,7 +51,7 @@ public class MatarPlayer : MonoBehaviour
         StartCoroutine(MuerteFaded());
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        mouse.mouseSensivility = 200;
+        mouse.lockMouse = false;
         botonesSaliendo.Stop();
         timelineMuerte.Stop();
         imagenMuerte.SetActive(false);

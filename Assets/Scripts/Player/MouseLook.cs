@@ -8,8 +8,8 @@ public class MouseLook : MonoBehaviour
     public GameObject mano;
     [Header ("Mouse Settings")]
     public float distance = 1f;
-    
-    public float mouseSensivility = 200f;
+
+    public Vector2 mouseSensivility = Vector2.one * 200f;
 
     public Transform playerBody;
     [Header ("Objetos/linterna/Medicamento")]
@@ -33,7 +33,8 @@ public class MouseLook : MonoBehaviour
     public Entidad1 niño1;
     public Entidad1 niño2;
     public Entidad1Fin niño3;
-    
+
+    public bool lockMouse = false;
 
     float xRotation = 0f;
     // Start is called before the first frame update
@@ -191,14 +192,15 @@ public class MouseLook : MonoBehaviour
             
 
         }
+        Vector2 sensivility = lockMouse ? Vector2.zero : mouseSensivility;
 
-        float mouseX = Input.GetAxis("Mouse X") * mouseSensivility * Time.deltaTime; 
-        float mouseY = Input.GetAxis("Mouse Y") * mouseSensivility * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X") * sensivility.x; 
+        float mouseY = Input.GetAxis("Mouse Y") * sensivility.y;
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f , 90f);
         transform.localRotation = Quaternion.Euler(xRotation,0f,0f);
-        playerBody.Rotate(Vector3.up * mouseX);
+        playerBody.Rotate(Vector3.up * mouseX * Time.deltaTime);
     }
 
 

@@ -19,7 +19,7 @@ public class CancelInspection : MonoBehaviour
     {
         if(inpectionCanvas.activeSelf == true)
         {
-            mouseLook.mouseSensivility = 0f;
+            mouseLook.lockMouse = true;
             movement.speed = 0f;
             zoom.enabled = false;
 
@@ -27,7 +27,7 @@ public class CancelInspection : MonoBehaviour
             {
                 inpectionCanvas.SetActive(false);
                 movement.speed = 5;
-                mouseLook.mouseSensivility = 200;
+                mouseLook.lockMouse = false;
                 zoom.enabled = true;
             }
         }

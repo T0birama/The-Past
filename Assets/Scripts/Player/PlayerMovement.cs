@@ -22,6 +22,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         QualitySettings.vSyncCount = 1;
+        Application.targetFrameRate = 60;
     }
 
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
     {
         isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        if(isGrounded && velocity.y < 0)
+        if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
@@ -37,12 +38,12 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
-        Vector3 move = transform.right * x + transform.forward * z;
-
-        controller.Move(move * speed * Time.deltaTime);
+        Vector3 move = (transform.right * x) + (transform.forward * z);
+        move.y = 0;
 
         velocity.y += gravity * Time.deltaTime;
-        controller.Move(velocity * Time.deltaTime);
+        controller.Move((velocity + (speed * move)) * Time.deltaTime);
+        
 
         if (Input.GetKey(KeyCode.LeftShift))
         {

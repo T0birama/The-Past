@@ -24137,12 +24137,12 @@ PrefabInstance:
     - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.97
+      value: 5.64
       objectReference: {fileID: 0}
     - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.32
+      value: 2.09
       objectReference: {fileID: 0}
     - target: {fileID: 5177534207477983687, guid: 8bbce6a508c75ec4d9862ebc6eed230b,
         type: 3}
@@ -35894,6 +35894,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbff4403ace0d36469c13ab6bd09c833, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &732481062
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 732481064}
+  - component: {fileID: 732481063}
+  m_Layer: 0
+  m_Name: SaliralMenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &732481063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732481062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20c9b6481fb69e14088490cd094c9475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: 2
+--- !u!4 &732481064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732481062}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 139.57333, y: 42.329784, z: 199.2837}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &739203353
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77616,7 +77661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mano: {fileID: 1457097177}
   distance: 6
-  mouseSensivility: 200
+  mouseSensivility: {x: 200, y: 4}
   playerBody: {fileID: 1513970941}
   linternaObj: {fileID: 916044969}
   medicamentoObj: {fileID: 1378311075}
@@ -77632,6 +77677,7 @@ MonoBehaviour:
   "ni\xF1o1": {fileID: 266927507}
   "ni\xF1o2": {fileID: 505663831}
   "ni\xF1o3": {fileID: 202887386}
+  lockMouse: 0
 --- !u!4 &1797749852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5177534208114750744, guid: 8bbce6a508c75ec4d9862ebc6eed230b,

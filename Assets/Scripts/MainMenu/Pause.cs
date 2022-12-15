@@ -32,7 +32,7 @@ public class Pause : MonoBehaviour
             esta = !esta;
             if (esta)
             {
-                mouse.mouseSensivility = 0;
+                mouse.lockMouse = true;
                 ImagePause.SetActive(true);
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
@@ -52,7 +52,7 @@ public class Pause : MonoBehaviour
             else
             {
 
-                mouse.mouseSensivility = 200;
+                mouse.lockMouse = false;
                 ImagePause.SetActive(false);
                 Cursor.visible = false;
                 Cursor.lockState = CursorLockMode.Locked;
