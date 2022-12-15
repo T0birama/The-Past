@@ -37,6 +37,7 @@ TagManager:
   - Juguete2
   - Juguete1
   - Juguete3
+  - Collider
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,8 @@ public class Entra : MonoBehaviour
     public Transform Virtualcamera;
     public GameObject fantasma;
     public Transform EnemyTransform;
+    public GameObject Objetivo1;
+    public GameObject Objetivo2;
    
     //public SiSeApagaEstePrendoEste si;
     // Start is called before the first frame update
@@ -40,6 +42,8 @@ public class Entra : MonoBehaviour
             StartCoroutine(lucesApagadas());
 
             Virtualcamera.LookAt(EnemyTransform);
+            Objetivo1.SetActive(false);
+            Objetivo2.SetActive(true);
 
         }
     }

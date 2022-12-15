@@ -24,9 +24,11 @@ public class JuguetesNiño : MonoBehaviour
             {
                 TodosDesactivados = false;
                 luz.enabled = true;
+               
 
             }
         }
+        
 
         Final.SetActive(TodosDesactivados);
         

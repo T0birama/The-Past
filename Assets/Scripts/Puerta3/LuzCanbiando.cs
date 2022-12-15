@@ -19,7 +19,7 @@ public class LuzCanbiando : MonoBehaviour
     public TimerEntidades t2;
     public GameObject Sol;
     public GameObject Luna;
-    public int scena;
+
 
 
 
@@ -75,7 +75,6 @@ public class LuzCanbiando : MonoBehaviour
         TimelineLuzApagar.Play();
         ColliderLocura.SetActive(false);
         TimelineLuzPrender.Stop();
-        ResetEscena(scena);
         t1.enabled = false;
         Textt1.SetActive(false);
         t2.enabled = true;
@@ -83,10 +82,5 @@ public class LuzCanbiando : MonoBehaviour
         Sol.SetActive(false);
         Luna.SetActive(true);
 
-    }
-
-    public void ResetEscena(int esc)
-    {
-        SceneManager.LoadScene(esc);
     }
 }

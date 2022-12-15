@@ -11,8 +11,10 @@ public class Entidad1Fin : MonoBehaviour
 
     public GameObject estasLuces;
     public GameObject otrasLuces;
+    public GameObject objetivo1;
+    public GameObject objetivo2;
 
-    
+
     public GameObject TimelineNiño3ParaParar;
     // Start is called before the first frame update
     void Start()
@@ -39,6 +41,8 @@ public class Entidad1Fin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            objetivo1.SetActive(false);
+            objetivo2.SetActive(true);
             timelineNiño3.Play();
             salida.SetActive(true);
             navMama.SetActive(false);

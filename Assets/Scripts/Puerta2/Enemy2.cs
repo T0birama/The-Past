@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Playables;
 
 public class Enemy2 : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class Enemy2 : MonoBehaviour
     public Transform player;
     public Animator Animator1;
     public AudioSource a1;
+
+    public PlayableDirector timelinemuerte;
    
 
     // Start is called before the first frame update
@@ -34,6 +37,7 @@ public class Enemy2 : MonoBehaviour
         Enemy.speed = 30;
         a1.volume = 0.5f;
         a1.pitch = 1.5f;
+        StopAllCoroutines();
        
     }
 
@@ -56,7 +60,16 @@ public class Enemy2 : MonoBehaviour
         PerseguirPlayer(); 
     }
 
+    public void soloPaMorir()
+    {
+        Animator1.SetFloat("multi", 0f);
+        Enemy.speed = 0;
+        Enemy.acceleration = 0;
+        Enemy.angularSpeed = 0;
+    }
     
+
+
 
 
 }
