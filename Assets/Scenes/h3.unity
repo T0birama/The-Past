@@ -7554,6 +7554,7 @@ MonoBehaviour:
   fadedBlack: {fileID: 1403881538}
   ison: 0
   Texto: {fileID: 48654274}
+  tiempoDeFaded: 1
 --- !u!1 &656321233
 GameObject:
   m_ObjectHideFlags: 0
