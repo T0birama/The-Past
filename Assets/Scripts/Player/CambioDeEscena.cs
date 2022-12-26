@@ -9,7 +9,7 @@ public class CambioDeEscena : MonoBehaviour
     public PlayableDirector fadedBlack;
     public bool ison;
     public GameObject Texto;
-    public float tiempoDeFaded = 1f;
+    public float tiempoDeFaded = 0.5f;
 
     // Start is called before the first frame update
     void Start()

@@ -8,6 +8,7 @@ public class PianoTouch : MonoBehaviour
     public GameObject SonidoDePiano;
     public float TiempoDeSonido = 2;
     public GameObject P1;
+    public Animator animator;
     
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class PianoTouch : MonoBehaviour
             {
                 SonidoDePiano.SetActive(true);
                 StartCoroutine(SiguienteSonido());
+                animator.enabled = true;
             }
         }
     }
@@ -34,5 +36,6 @@ public class PianoTouch : MonoBehaviour
         gameObject.SetActive(false);
         P1.SetActive(true);
         SonidoDePiano.SetActive(false);
+        animator.enabled = false;
     }
 }
