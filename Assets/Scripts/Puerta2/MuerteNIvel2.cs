@@ -27,7 +27,7 @@ public class MuerteNIvel2 : MonoBehaviour
 
     IEnumerator Muerte()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.1f);
         TimelineMuerte();
     }
 
