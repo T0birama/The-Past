@@ -22,7 +22,7 @@ public class Fuerza : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            rb.AddForce(transform.right * fuerza);
+            rb.AddForce(-transform.forward * fuerza);
             gameObject.SetActive(false);
         }
     }

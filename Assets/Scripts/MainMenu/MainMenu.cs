@@ -10,6 +10,7 @@ public class MainMenu : MonoBehaviour
    
     public void Play()
     {
+        Cursor.visible = true;
         StartCoroutine(Faded());
         fadedBlack.Play();
     }

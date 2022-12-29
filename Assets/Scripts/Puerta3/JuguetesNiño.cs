@@ -7,6 +7,7 @@ public class JuguetesNiño : MonoBehaviour
     public GameObject Final;
     public GameObject[] colisiones;
     public LuzCanbiando luz;
+    public TimerEntidades te;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,7 @@ public class JuguetesNiño : MonoBehaviour
             {
                 TodosDesactivados = false;
                 luz.enabled = true;
-               
+               te.enabled = false;
 
             }
         }
